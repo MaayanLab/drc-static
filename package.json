@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "deploy": "npm run build && gh-pages -d dist"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.5",
@@ -17,8 +16,5 @@
     "astro": "^5.1.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
