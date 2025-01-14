@@ -1,0 +1,14 @@
+---
+const centers = Object.values(import.meta.glob('./*.md', { eager: true }))
+---
+<h1>Common Fund Data Ecosystem Centers</h1>
+<p>The NIH Common Fund (CF) programs have produced transformative datasets, databases, methods, bioinformatics tools and workflows that are significantly advancing biomedical research in the United States and worldwide. Currently, CF programs are mostly isolated. However, integrating data from across CF programs has the potential for synergistic discoveries. In addition, since CF programs have a time limit of 10 years, sustainability of the widely used CF digital resources after the programs expire is critical. To address these challenges, the NIH established the Common Fund Data Ecosystem (CFDE) program which has been recently approved to continue to its second new phase. For the second phase of the CFDE five centers were established.</p>
+<div>
+  {centers.map(center =>
+    <div>
+      <img src={center.frontmatter.icon} />
+      <h2>{center.frontmatter.label} ({center.frontmatter.short_label})</h2>
+      <p>{center.frontmatter.short_description}</p>
+    </div>
+  )}
+</div>

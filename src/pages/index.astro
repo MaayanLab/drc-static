@@ -1,12 +1,5 @@
 ---
-// Component Imports
-import Counter from '../components/Counter';
-const someProps = {
-	count: 0,
-};
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+const dccs = Object.values(import.meta.glob('./dccs/*.md', { eager: true }))
 ---
 
 <html lang="en">
@@ -28,9 +21,13 @@ const someProps = {
 	</head>
 	<body>
 		<main>
-			<Counter {...someProps} client:visible>
-				<h1>Hello, React!</h1>
-			</Counter>
+			<h1>Common Fund programs partnered with the CFDE</h1>
+			<p>The NIH Common Fund is a funding entity within the NIH that supports bold scientific programs that catalyze discovery across all biomedical and behavioral research.</p>
+			{dccs.map(dcc =>
+				<a href={`dccs/${dcc.frontmatter.short_label}`}>
+					<img src={dcc.frontmatter.icon} />
+				</a>
+			)}
 		</main>
 	</body>
 </html>
