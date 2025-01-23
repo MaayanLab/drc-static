@@ -1,0 +1,18 @@
+---
+layout: ../../layouts/Publication.astro
+title: Genetic diversity fuels gene discovery for tobacco and alcohol use.
+journal: Nature
+authors: Saunders GRB, Wang X, Chen F, Jang SK, Liu M, Wang C, Gao S, Jiang Y, Khunsriraksakul C, Otto JM, Addison C, Akiyama M, Albert CM, Aliev F, Alonso A, Arnett DK, Ashley-Koch AE, Ashrani AA, Barnes KC, Barr RG, Bartz TM, Becker DM, Bielak LF, Benjamin EJ, Bis JC, Bjornsdottir G, Blangero J, Bleecker ER, Boardman JD, Boerwinkle E, Boomsma DI, Boorgula MP, Bowden DW, Brody JA, Cade BE, Chasman DI, Chavan S, Chen YI, Chen Z, Cheng I, Cho MH, Choquet H, Cole JW, Cornelis MC, Cucca F, Curran JE, de Andrade M, Dick DM, Docherty AR, Duggirala R, Eaton CB, Ehringer MA, Esko T, Faul JD, Fernandes Silva L, Fiorillo E, Fornage M, Freedman BI, Gabrielsen ME, Garrett ME, Gharib SA, Gieger C, Gillespie N, Glahn DC, Gordon SD, Gu CC, Gu D, Gudbjartsson DF, Guo X, Haessler J, Hall ME, Haller T, Harris KM, He J, Herd P, Hewitt JK, Hickie I, Hidalgo B, Hokanson JE, Hopfer C, Hottenga J, Hou L, Huang H, Hung YJ, Hunter DJ, Hveem K, Hwang SJ, Hwu CM, Iacono W, Irvin MR, Jee YH, Johnson EO, Joo YY, Jorgenson E, Justice AE, Kamatani Y, Kaplan RC, Kaprio J, Kardia SLR, Keller MC, Kelly TN, Kooperberg C, Korhonen T, Kraft P, Krauter K, Kuusisto J, Laakso M, Lasky-Su J, Lee WJ, Lee JJ, Levy D, Li L, Li K, Li Y, Lin K, Lind PA, Liu C, Lloyd-Jones DM, Lutz SM, Ma J, Magi R, Manichaikul A, Martin NG, Mathur R, Matoba N, McArdle PF, McGue M, McQueen MB, Medland SE, Metspalu A, Meyers DA, Millwood IY, Mitchell BD, Mohlke KL, Moll M, Montasser ME, Morrison AC, Mulas A, Nielsen JB, North KE, Oelsner EC, Okada Y, Orru V, Palmer ND, Palviainen T, Pandit A, Park SL, Peters U, Peters A, Peyser PA, Polderman TJC, Rafaels N, Redline S, Reed RM, Reiner AP, Rice JP, Rich SS, Richmond NE, Roan C, Rotter JI, Rueschman MN, Runarsdottir V, Saccone NL, Schwartz DA, Shadyab AH, Shi J, Shringarpure SS, Sicinski K, Skogholt AH, Smith JA, Smith NL, Sotoodehnia N, Stallings MC, Stefansson H, Stefansson K, Stitzel JA, Sun X, Syed M, Tal-Singer R, Taylor AE, Taylor KD, Telen MJ, Thai KK, Tiwari H, Turman C, Tyrfingsson T, Wall TL, Walters RG, Weir DR, Weiss ST, White WB, Whitfield JB, Wiggins KL, Willemsen G, Willer CJ, Winsvold BS, Xu H, Yanek LR, Yin J, Young KL, Young KA, Yu B, Zhao W, Zhou W, Zollner S, Zuccolo L, Batini C, Bergen AW, Bierut LJ, David SP, Gagliano Taliun SA, Hancock DB, Jiang B, Munafo MR, Thorgeirsson TE, Liu DJ, Vrieze S
+year: 2022
+page: 720-724
+volume: 612
+issue: 7941
+pmid: 36477530.0
+pmcid: PMC9771818
+doi: 10.1038/s41586-022-05477-4
+landmark: False
+carousel: False
+featured: False
+r03: R03OD032630
+keywords: ["Tobacco Use", "Sample Size", "Multifactorial Inheritance", "Europe", "Risk Factors", "Genetic Variation", "Alcohol Drinking", "Genetic Loci", "Internationality", "Genetic Predisposition to Disease", "Transcriptome", "Genome-Wide Association Study", "Humans"]
+---
