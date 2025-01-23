@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: The Cellular Senescence Network
 homepage: https://sennetconsortium.org/
-icon: /img/SenNet.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/SenNet.png
 short_label: SenNet
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/senescence

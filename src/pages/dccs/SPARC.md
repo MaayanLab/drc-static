@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Stimulating Peripheral Activity to Relieve Conditions
 homepage: https://sparc.science/
-icon: /img/SPARC.svg
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/SPARC.svg
 short_label: SPARC
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/SPARC

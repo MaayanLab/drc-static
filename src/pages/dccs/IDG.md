@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Illuminating the Druggable Genome
 homepage: https://druggablegenome.net/
-icon: /img/IDG.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/IDG.png
 short_label: IDG
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/IDG

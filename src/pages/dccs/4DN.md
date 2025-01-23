@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: 4D Nucleome
 homepage: https://www.4dnucleome.org/
-icon: /img/4DN.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/4DN.png
 short_label: 4DN
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/4DN

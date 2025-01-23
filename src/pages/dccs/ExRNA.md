@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Extracellular RNA Communication
 homepage: https://exrna.org/
-icon: /img/exRNA.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/exRNA.png
 short_label: ExRNA
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/ExRNA

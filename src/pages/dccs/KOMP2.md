@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Knockout Mouse Phenotyping Program
 homepage: https://www.mousephenotype.org/
-icon: /img/KOMP2.svg
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/KOMP2.svg
 short_label: KOMP2
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/KOMP2

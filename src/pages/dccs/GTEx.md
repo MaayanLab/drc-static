@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Genotype Tissue Expression
 homepage: https://www.gtexportal.org/home/
-icon: /img/GTEx.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/GTEx.png
 short_label: GTEx
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/GTEx

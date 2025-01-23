@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Undiagnosed Diseases Network
 homepage: https://undiagnosed.hms.harvard.edu/
-icon: /img/UDN.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/UDN.png
 short_label: UDN
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/Diseases

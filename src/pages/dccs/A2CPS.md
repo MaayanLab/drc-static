@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Acute to Chronic Pain Signatures
 homepage: https://a2cps.org/
-icon: /img/A2CPS.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/A2CPS.png
 short_label: A2CPS
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/pain

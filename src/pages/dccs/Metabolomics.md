@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Metabolomics
 homepage: https://www.metabolomicsworkbench.org/
-icon: /img/Metabolomics.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/Metabolomics.png
 short_label: Metabolomics
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/Metabolomics

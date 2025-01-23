@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Bridge to Artificial Intelligence
 homepage: https://bridge2ai.org/
-icon: /img/Bridge2AI.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/Bridge2AI.png
 short_label: Bridge2AI
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/Bridge2AI

@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Gabriella Miller Kids First Pediatric Research
 homepage: https://kidsfirstdrc.org/
-icon: /img/Kids First.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/Kids First.png
 short_label: Kids First
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/KidsFirst

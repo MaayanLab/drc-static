@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Human BioMolecular Atlas Program
 homepage: https://hubmapconsortium.org/
-icon: /img/HuBMAP.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/HuBMAP.png
 short_label: HuBMAP
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/HuBMAP

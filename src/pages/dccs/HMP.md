@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: The Human Microbiome Project
 homepage: https://portal.hmpdacc.org/
-icon: /img/HMP.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/HMP.png
 short_label: HMP
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/HMP

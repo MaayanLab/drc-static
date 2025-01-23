@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Molecular Transducers of Physical Activity Consortium
 homepage: https://motrpac-data.org/
-icon: /img/MoTrPAC.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/MoTrPAC.png
 short_label: MoTrPAC
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/MolecularTransducers

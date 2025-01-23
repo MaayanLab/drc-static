@@ -2,7 +2,7 @@
 layout: ../../layouts/DCC.astro
 label: Human Heredity & Health in Africa
 homepage: https://h3africa.org/
-icon: /img/h3africa.png
+icon: https://cfde-drc.s3.amazonaws.com/assets/img/h3africa.png
 short_label: H3Africa
 cfde_partner: True
 cf_site: https://commonfund.nih.gov/global-health
