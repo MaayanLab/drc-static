@@ -1,0 +1,29 @@
+---
+const { frontmatter } = Astro.props
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<style>
+			html,
+			body {
+				font-family: system-ui;
+				margin: 0;
+			}
+			body {
+				padding: 2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="flex flex-col gap-2">
+      <div class="flex w-48 h-48 justify-center items-center"><img src={frontmatter.icon} class="max-w-96 max-h-96" /></div>
+			<h1 class="text-4xl font-bold">{frontmatter.label}</h1>
+      <slot />
+		</main>
+	</body>
+</html>
