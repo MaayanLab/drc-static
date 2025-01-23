@@ -16,5 +16,4 @@ title: 'Gabriella Miller Kids First Data Resource Center (KFDRC): Empowering dis
   across germline and somatic variation in pediatric cancer.'
 volume: 7_Supplement
 year: 2023
-
 ---
