@@ -1,0 +1,71 @@
+---
+import '@/styles/base.css'
+import Layout from '@/components/Layout.astro'
+import PublicationCitation from '@/components/PublicationCitation.astro'
+const publications = Object.values(import.meta.glob('@/pages/publications/*.md', { eager: true })).filter(publication => publication.frontmatter.layout === '@/layouts/Publication.astro')
+const dccs = Object.fromEntries(Object.values(import.meta.glob('@/pages/dccs/*.md', { eager: true })).filter(dcc => dcc.frontmatter.layout === '@/layouts/DCC.astro').map(dcc => [dcc.frontmatter.short_label, dcc]))
+const toCamelCase = (str: String) => {
+  return str.toLowerCase().split(' ').map(word =>
+    word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+  ).join(' ');
+};
+---
+
+<Layout>
+	<slot />
+	{publications.map(publication =>
+		<div class="pb-2 border-b">
+			<PublicationCitation publication={publication.frontmatter} />
+			<div class="flex space-x-1 items-center justify-end">
+				{ publication.frontmatter.pmid && 
+						<a class="hover:bg-gray-100 text-primary p-4" target="_blank" rel="noopener noreferrer" href={`https://pubmed.ncbi.nlm.nih.gov/${publication.frontmatter.pmid}/`}>
+							PubMed
+						</a>
+				}
+				{ publication.frontmatter.pmcid && 
+						<a class="hover:bg-gray-100 text-primary p-4" target="_blank" rel="noopener noreferrer" href={`https://www.ncbi.nlm.nih.gov/pmc/articles/${publication.frontmatter.pmcid}/`}>
+							PMC
+						</a>
+				}
+				{ publication.frontmatter.doi && 
+						<a class="hover:bg-gray-100 text-primary p-4" target="_blank" rel="noopener noreferrer" href={`https://www.doi.org/${publication.frontmatter.doi}`}>
+							DOI
+						</a>
+				}
+				{ publication.frontmatter.pmcid && 
+						<a class="hover:bg-gray-100 text-primary p-4">Export citation {publication.frontmatter.pmcid}</a>
+				}
+				{publication.frontmatter.landmark &&
+						<div class="bg-primary text-secondary rounded-lg px-4 py-1">
+							Landmark
+						</div>
+				}
+				{publication.frontmatter.centers && publication.frontmatter.centers.length > 0 &&
+						<>
+							<div class="bg-secondary rounded-lg p-4">Center</div>
+							{publication.frontmatter.centers.map((c) => (
+									<div class="bg-primary text-secondary rounded-lg px-4 py-1">{c.center.short_label}</div>
+							))}
+						</>
+				}
+				{publication.frontmatter.dccs && publication.frontmatter.dccs.map(dcc => dccs[dcc]).map((dcc) =>
+					dcc && <div class="bg-primary text-secondary rounded-lg px-4 py-1">{dcc.frontmatter.short_label}</div>
+				)}
+				{publication.frontmatter.r03s && publication.frontmatter.r03s.length > 0 && (
+						publication.frontmatter.r03s.map((r03, index) => (
+								<div class="bg-primary text-secondary rounded-lg px-4 py-1">R03</div>
+						))
+				)}
+
+		</div>
+			{/* Keywords */}
+			<div class="flex flex-row flex-wrap gap-1 max-w-full mt-2 items-center justify-content-start">
+				{publication.frontmatter.keywords && (
+						JSON.parse(publication.frontmatter.keywords).map((keyword, idx) => (
+								<div class="bg-secondary rounded-lg px-4">{toCamelCase(keyword)}</div>
+						))
+					)}
+			</div>
+		</div>
+	)}
+</Layout>
