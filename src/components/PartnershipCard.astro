@@ -1,0 +1,36 @@
+---
+import Prose from '@/components/Prose.astro'
+const { partnership, dccs } = Astro.props
+---
+<div class="flex flex-col justify-start gap-2 p-8 shadow-md rounded-md">
+  <div class="flex flex-row gap-8 items-center">
+    <div class="flex w-24 h-24 justify-center items-center"><img src={partnership.frontmatter.icon} class="max-w-24 max-h-24" /></div>
+    <span class="hanken-grotesk-500 text-xl text-primary">{partnership.frontmatter.title}</span>
+  </div>
+  <div>
+    {partnership.frontmatter.status === 'completed' && <span class="text-primary bg-secondary rounded-lg px-4 py-2">COMPLETED</span>}
+    {partnership.frontmatter.status === 'active' && <span class="text-secondary bg-primary rounded-lg px-4 py-2">ACTIVE</span>}
+  </div>
+  <Prose>
+    <p class="overflow-ellipsis text-primary">{partnership.rawContent()}</p>
+    {partnership.frontmatter.publications && <>
+      <p><strong>Publication:</strong> {partnership.frontmatter.publications}</p>
+    </>}
+  </Prose>
+  {partnership.frontmatter.dccs && partnership.frontmatter.dccs.length > 0 &&
+    <>
+      <span class="font-bold text-primary">Participating DCCs:</span>
+      <div class="grid grid-cols-4 lg:grid-cols-3 gap-2">{partnership.frontmatter.dccs.map(dcc => dccs[dcc]).map(dcc =>
+        <a class="flex justify-center items-center p-2 hover:bg-gray-100" href={dcc.url}>
+          <div class="w-16 h-16 flex justify-center items-center">
+            <img class="max-w-16 max-h-16" src={dcc.frontmatter.icon} alt={dcc.frontmatter.short_label} />
+          </div>
+        </a>
+      )}</div>
+    </>
+  }
+  <div class="flex flex-row gap-8">
+    {partnership.frontmatter.grant_num && <a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={`https://reporter.nih.gov/project-details/${partnership.frontmatter.grant_num}`} target="_blank">Grant: {partnership.frontmatter.grant_num}</a>}
+    {partnership.frontmatter.website && <a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={partnership.frontmatter.website} target="_blank">Go to website</a>}
+  </div>
+</div>

@@ -4,7 +4,7 @@ dccs:
 - Kids First
 - LINCS
 - SPARC
-layout: '@/layouts/Partnerships.astro'
+layout: '@/layouts/Partnership.astro'
 lead_dccs:
 - Kids First
 priority: 7.0

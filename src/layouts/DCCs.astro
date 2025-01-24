@@ -1,34 +1,24 @@
 ---
 import '@/styles/base.css'
+import Layout from '@/components/Layout.astro'
 const dccs = Object.values(import.meta.glob('@/pages/dccs/*.md', { eager: true })).filter(dcc => dcc.frontmatter.layout === '@/layouts/DCC.astro')
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.png`} />
-	</head>
-	<body>
-		<main class="dm-sans-500">
-			<slot />
-			<!-- <h1 class="text-4xl hanken-grotesk-500 text-primary">Common Fund Programs Partnered with the CFDE</h1> -->
-			<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-				{dccs.map(dcc =>
-					<div class="flex flex-col justify-start items-stretch gap-2 p-8 shadow-md rounded-md">
-						<div class="flex flex-row gap-8 items-center">
-							<div class="flex w-24 h-24 justify-center items-center"><img src={dcc.frontmatter.icon} class="max-w-24 max-h-24" /></div>
-							<span class="hanken-grotesk-500 text-xl text-primary">{dcc.frontmatter.short_label}</span>
-						</div>
-						<p class="overflow-ellipsis text-primary">{dcc.rawContent()}</p>
-						<div class="flex flex-row gap-8">
-							<a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={dcc.url}>Expand</a>
-							<a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={dcc.frontmatter.homepage} target="_blank">Go to DCC portal</a>
-						</div>
-					</div>
-				)}
+<Layout>
+	<slot />
+	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+		{dccs.map(dcc =>
+			<div class="flex flex-col justify-start items-stretch gap-2 p-8 shadow-md rounded-md">
+				<div class="flex flex-row gap-8 items-center">
+					<div class="flex w-24 h-24 justify-center items-center"><img src={dcc.frontmatter.icon} class="max-w-24 max-h-24" /></div>
+					<span class="hanken-grotesk-500 text-xl text-primary">{dcc.frontmatter.short_label}</span>
+				</div>
+				<p class="overflow-ellipsis text-primary">{dcc.rawContent()}</p>
+				<div class="flex flex-row gap-8">
+					<a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={dcc.url}>Expand</a>
+					<a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={dcc.frontmatter.homepage} target="_blank">Go to DCC portal</a>
+				</div>
 			</div>
-		</main>
-	</body>
-</html>
+		)}
+	</div>
+</Layout>

@@ -5,10 +5,10 @@ const { frontmatter } = Astro.props
 ---
 
 <Layout>
-	<div class="flex w-48 h-48 justify-center items-center"><img src={frontmatter.image} class="max-w-48 max-h-48" /></div>
+	<div class="flex w-48 h-48 justify-center items-center"><img src={frontmatter.icon} class="max-w-48 max-h-48" /></div>
 	<h1>{frontmatter.title}</h1>
 	<slot />
 	<div class="flex flex-row gap-4">
-		<a class="font-bold" href={frontmatter.link} target="_blank">Website</a>
+		<a class="font-bold" href={frontmatter.website} target="_blank">Website</a>
 	</div>
 </Layout>

@@ -3,7 +3,7 @@ dccs:
 - ExRNA
 - GTEx
 - Kids First
-layout: '@/layouts/Partnerships.astro'
+layout: '@/layouts/Partnership.astro'
 lead_dccs:
 - ExRNA
 priority: 5.0

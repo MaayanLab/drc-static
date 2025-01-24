@@ -1,6 +1,6 @@
 ---
 grant_num: U24OD038421
-layout: '@/layouts/Partnerships.astro'
+layout: '@/layouts/Partnership.astro'
 status: active
 title: Community Visualization Hub
 ---

@@ -1,21 +1,8 @@
 ---
 import '@/styles/base.css'
+import Layout from '@/components/Layout.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.png`} />
-	</head>
-	<body>
-		<main class="dm-sans-500">
-      <div class="flex flex-row gap-4">
-        <a class="hover:bg-gray-100 transition p-4" href="dccs/">CF Programs</a>
-        <a class="hover:bg-gray-100 transition p-4" href="centers/">Centers</a>
-      </div>
-			<slot />
-		</main>
-	</body>
-</html>
+<Layout>
+	<slot />
+</Layout>

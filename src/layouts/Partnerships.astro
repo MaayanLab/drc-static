@@ -1,33 +1,19 @@
 ---
 import '@/styles/base.css'
-const { frontmatter } = Astro.props
+import PartnershipCard from '@/components/PartnershipCard.astro'
+import Layout from '@/components/Layout.astro'
+const partnerships = Object.values(import.meta.glob('@/pages/partnerships/*.md', { eager: true })).filter(partnership => partnership.frontmatter.layout === '@/layouts/Partnership.astro')
+const dccs = Object.fromEntries(Object.values(import.meta.glob('@/pages/dccs/*.md', { eager: true })).filter(dcc => dcc.frontmatter.layout === '@/layouts/DCC.astro').map(dcc => [dcc.frontmatter.short_label, dcc]))
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.png`} />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
-	</head>
-	<body>
-		<main class="flex flex-col gap-2">
-      <div class="flex w-48 h-48 justify-center items-center"><img src={frontmatter.icon} class="max-w-96 max-h-96" /></div>
-			<h1 class="text-4xl font-bold">{frontmatter.title}</h1>
-      <slot />
-			<div class="flex flex-row gap-4">
-				<a class="font-bold" href={frontmatter.website} target="_blank">Website</a>
-			</div>
-		</main>
-	</body>
-</html>
+<Layout>
+	<slot />
+	<h2>Active CFDE Partnerships</h2>
+	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+		{partnerships.filter(partnership => partnership.frontmatter.status === 'active').map(partnership => <PartnershipCard partnership={partnership} dccs={dccs} />)}
+	</div>
+	<h2>Past CFDE Partnerships</h2>
+	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+		{partnerships.filter(partnership => partnership.frontmatter.status === 'completed').map(partnership => <PartnershipCard partnership={partnership} dccs={dccs} />)}
+	</div>
+</Layout>
