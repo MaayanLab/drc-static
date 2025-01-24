@@ -10,7 +10,7 @@ dcc:
 - Kids First
 featured: false
 image: https://cfde-drc.s3.amazonaws.com/assets/img/Playbook-useathon.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://playbook-workflow-builder.cloud/playbooks
 short_description: The first Use-A-Thon of Playbook Partnership to test platform and
   public use cases

@@ -3,7 +3,7 @@ creator_dcc:
 - LINCS
 image: /img/g2sg_aging.png
 inputs: aging signatures; gene sets
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://genesetcart.cfde.cloud/use-cases
 short_description: Aging signatures are gene expression changes linked to aging. To
   investigate common biological aspects of aging and exercise and identify genes affected

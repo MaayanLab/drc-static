@@ -4,7 +4,7 @@ grant_num: OT2OD036435
 homepage: https://cfde.cloud/
 icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/workbench-logo.png
 label: The Data Resource Center
-layout: ../../layouts/Centers.astro
+layout: '@/layouts/Center.astro'
 short_description: The CFDE Workbench
 short_label: DRC
 ---

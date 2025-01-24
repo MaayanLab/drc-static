@@ -6,7 +6,7 @@ cfde_specific: false
 end_date: '2026-05-12T00:00:00-04:00'
 featured: false
 image: https://cfde-drc.s3.amazonaws.com/assets/img/data-science-fellowship-presentation.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://card.nih.gov/job-training-opportunities/training-opportunities/data-science-masters
 short_description: "The Master\u2019s in Data Science Fellowship allows students to\
   \ earn an MPS degree in data science while earning a full stipend to work at CARD\

@@ -3,7 +3,7 @@ creator_dcc:
 - ExRNA
 image: /img/usecase_dex.png
 inputs: compound
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://dd-kg-ui.cfde.cloud/use_cases/drug2exrna?edge_labels=true
 short_description: Find genes that are up-regulated by dexamethasone, (2) loci expressed
   in exRNA that overlap RBP binding regions, (3) the RBP that overlaps the locus,

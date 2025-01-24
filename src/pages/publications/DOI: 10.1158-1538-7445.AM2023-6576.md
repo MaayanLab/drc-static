@@ -10,7 +10,7 @@ featured: false
 issue: '83'
 journal: Cancer Research
 landmark: true
-layout: ../../layouts/Publication.astro
+layout: '@/layouts/Publication.astro'
 page: '6576'
 title: 'Gabriella Miller Kids First Data Resource Center (KFDRC): Empowering discovery
   across germline and somatic variation in pediatric cancer.'

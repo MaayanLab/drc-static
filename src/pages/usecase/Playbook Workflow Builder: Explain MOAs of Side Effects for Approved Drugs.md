@@ -3,7 +3,7 @@ creator_dcc:
 - LINCS
 image: /img/playbook_usecase2.png
 inputs: phenotype; drug
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/c4d40504-57b6-d48f-6d12-d47891e26f2d
 short_description: For a side effect and a drug, find differentially expressed genes
   using the LINCS L1000, literature co-mentions, or GWAS. If overlapping genes are

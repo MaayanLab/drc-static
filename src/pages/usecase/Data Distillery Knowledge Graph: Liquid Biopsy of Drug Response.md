@@ -3,7 +3,7 @@ creator_dcc:
 - ExRNA
 image: /img/app_LiquidBiopsyOfDrugResponse.png
 inputs: compound
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://dd-kg-ui.cfde.cloud/dd_apps/drug2exrna?edge_labels=true
 short_description: For a given drug term, return (1) up-regulated genes, (2) loci
   expressed in exRNA that overlap RBP binding regions, (3) the RBP that overlaps the

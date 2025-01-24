@@ -1,6 +1,6 @@
 ---
 grant_num: U24OD038422
-layout: ../../layouts/Partnerships.astro
+layout: '@/layouts/Partnerships.astro'
 status: active
 title: Genetic Basis of Birth Defects and Childhood Cancer
 ---

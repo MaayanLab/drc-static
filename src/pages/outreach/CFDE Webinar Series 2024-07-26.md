@@ -8,7 +8,7 @@ dcc:
 end_date: '2024-07-26T14:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/cfde-webinar-july2024.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://hubmapconsortium.org/from-atlas-to-practice-innovation-lab/
 short_description: "The CFDE Webinar Series features HuBMAP and SenNet DCCs about\
   \ A Tour of the Human Reference Atlas v2.1. Katy B\xF6rner, Center Director for\

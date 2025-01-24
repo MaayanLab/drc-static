@@ -3,7 +3,7 @@ creator_dcc:
 - LINCS
 image: /img/playbook_usecase1.png
 inputs: phenotype; drug; drug
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/6a7af61b-ef0a-7687-5d6e-02deeb253172
 short_description: For an adverse event known to be caused by drug-drug interactions,
   I would like to know if there are overlapping genes between genes that are up or

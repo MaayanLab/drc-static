@@ -4,7 +4,7 @@ grant_num: U54OD036472
 homepage: https://cfdeconnect.org/
 icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/icc-logo.png
 label: The Integration and Coordination Center
-layout: ../../layouts/Centers.astro
+layout: '@/layouts/Center.astro'
 short_description: 'CONNECT: Collaborative Network for Nurturing Ecosystems of Common
   Fund Team Science'
 short_label: ICC

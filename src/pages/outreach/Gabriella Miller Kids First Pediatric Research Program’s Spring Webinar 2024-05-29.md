@@ -4,7 +4,7 @@ carousel: false
 cfde_specific: false
 featured: false
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/kf_webinar_2024spring.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://nih.zoomgov.com/meeting/register/vJIsduCvqz8jHyoDNPvlwdwrUmVglsuoPd4#/registration
 short_description: 'The Kids First program team, experts and families will take a
   deep dive into pediatric research advancement through big data and its implications

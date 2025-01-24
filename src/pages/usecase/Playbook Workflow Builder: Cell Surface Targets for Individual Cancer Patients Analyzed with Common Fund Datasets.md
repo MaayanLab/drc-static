@@ -5,7 +5,7 @@ featured: true
 featured_image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/usecase13.png
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/pwb-uc-13-1.png
 inputs: gene count matrix
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/4d1fa785-255a-c61c-4a8f-b5ad5de0a2c2
 short_description: Given RNA-seq samples from a patient tumor, we screen for targets
   which are highly expressed in the tumor but lowly expressed across all healthy human

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Knockout Mouse Phenotyping Program
 homepage: https://www.mousephenotype.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/KOMP2.svg

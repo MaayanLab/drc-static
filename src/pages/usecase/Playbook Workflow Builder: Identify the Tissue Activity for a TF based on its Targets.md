@@ -4,7 +4,7 @@ creator_dcc:
 featured_image: /img/usecase4.png
 image: /img/playbook_usecase4.png
 inputs: gene
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/9cb775b8-bbee-3062-e2db-8b04125ef3d3
 short_description: Given a Transcription Factor, we collect its targets by various
   resources and then Enrich the set of consensus targets against GTEx Tissue expression.

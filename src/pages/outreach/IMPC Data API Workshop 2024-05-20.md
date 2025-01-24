@@ -5,7 +5,7 @@ cfde_specific: false
 end_date: '2024-05-20T12:00:00-04:00'
 featured: false
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/impc_data_api_workshop.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://www.mousephenotype.org/blog/2024/04/10/impc-data-api-workshop/
 short_description: The objective of the course is to enable researchers to construct
   Solr API queries to obtain IMPC data based on an understanding of how knowledge

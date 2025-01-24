@@ -7,7 +7,7 @@ dcc:
 end_date: '2025-01-25T00:00:00-05:00'
 featured: false
 image: https://cfde-drc.s3.amazonaws.com/assets/img/SenNet_cusp_2024.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://sennetconsortium.org/internship/
 short_description: "The Consortium Undergraduate Student Program (CUSP) is a summer\
   \ research internship program for undergraduate students hosted by laboratories\

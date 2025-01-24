@@ -5,7 +5,7 @@ dccs:
 - Metabolomics
 - LINCS
 - HuBMAP
-layout: ../../layouts/Partnerships.astro
+layout: '@/layouts/Partnerships.astro'
 lead_dccs:
 - GlyGen
 priority: 3.0

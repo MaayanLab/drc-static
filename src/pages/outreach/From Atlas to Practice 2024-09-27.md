@@ -8,7 +8,7 @@ dcc:
 end_date: '2024-09-27T00:00:00-04:00'
 featured: false
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/atlas-to-practice.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: /info/training_and_outreach/cfde-webinar-series
 short_description: Accelerating the Convergence of Spatial Biology and Pathology!
   The 2024 From Atlas to Practice Innovation Lab will bring together investigators

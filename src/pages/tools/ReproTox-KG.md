@@ -4,7 +4,7 @@ featured: true
 icon: /img/reprotox-kg-logo.png
 image: /img/reprotox-kg-screenshot.png
 label: ReproTox-KG
-layout: ../../layouts/Tools.astro
+layout: '@/layouts/Tools.astro'
 short_description: Toxicology knowledge graph for structural birth defects
 tutorial: '[ "https://www.youtube.com/watch?v=Gt3CCsvTppc", "https://www.youtube.com/watch?v=nqzDOsDFJ7g"
   ]'

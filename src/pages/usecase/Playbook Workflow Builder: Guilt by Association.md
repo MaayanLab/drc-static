@@ -4,7 +4,7 @@ creator_dcc:
 featured_image: /img/usecase10.png
 image: /img/playbook_usecase10.png
 inputs: gene set
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/9bad4205-70e2-7f8d-b151-8fbb11e58ea9
 short_description: Given a set of genes, connect the dots (CTD) is performed against
   protein & pathway graphs to obtain a small subset of highly connected genes and

@@ -6,7 +6,7 @@ dcc:
 - MoTrPAC
 featured: false
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/MoTrPAC.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://motrpac-data.org/
 short_description: The MoTrPAC Bioinformatics Center (BIC) hosts monthly open office
   hours to support the scientific community. Each session is hosted by one member

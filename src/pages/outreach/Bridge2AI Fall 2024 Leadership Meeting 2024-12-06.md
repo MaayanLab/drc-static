@@ -7,7 +7,7 @@ dcc:
 end_date: '2024-12-06T12:00:00-05:00'
 featured: false
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/b2ai-fall-24.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://bridge2ai.org/event/bridge2ai-fall-2024-leadership-meeting/
 short_description: 'The meeating will be an opportunity for researchers and experts
   to engage in vibrant discussions. The theme of the Fall Leadership Meeting is: Cross

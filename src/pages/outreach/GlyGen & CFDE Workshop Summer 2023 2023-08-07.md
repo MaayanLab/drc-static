@@ -6,7 +6,7 @@ dcc:
 - GlyGen
 featured: false
 image: https://cfde-drc.s3.amazonaws.com/assets/img/glygen-2023-workshop.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://wiki.glygen.org/GlyGen_CFDE_Workshop_Summer_2023
 short_description: This workshop provides an opportunity to learn about glycobiology
   and introduce bioinformatics resources to answer a biological questions.

@@ -9,7 +9,7 @@ dcc:
 end_date: '2024-09-12T15:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/exrna-workshop-2024-2.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://exrna.org/events/cfdeworkshop
 short_description: Join us for an engaging hands-on workshop where Meenu Srinivasan
   of the Louise Laurent Lab at the University of California-San Diego will demonstrate

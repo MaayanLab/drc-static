@@ -7,7 +7,7 @@ dcc:
 end_date: '2024-07-26T23:59:00-06:00'
 featured: true
 image: https://cfde-drc.s3.amazonaws.com/assets/img/nih_plus_cfde_plus_idg_logo.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://datascience.unm.edu/isbdscourse_cfde/
 short_description: The CFDE Edition of ISBDS is an NIH CFDE sponsored training course,
   focused  on effective use and integration of Common Fund (CF) datasets for  biomedical

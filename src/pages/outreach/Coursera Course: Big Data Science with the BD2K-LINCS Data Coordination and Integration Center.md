@@ -6,7 +6,7 @@ dcc:
 - LINCS
 featured: false
 image: https://cfde-drc.s3.amazonaws.com/assets/img/lincs_coursera.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://www.coursera.org/learn/bd2k-lincs
 short_description: 'In this course the LINCS DCC covers computational methods including:
   clustering, gene-set enrichment analysis, interactive data visualization, and supervised

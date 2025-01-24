@@ -4,7 +4,7 @@ creator_dcc:
 featured_image: /img/usecase5.png
 image: /img/playbook_usecase5.png
 inputs: phenotype
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/77805f8b-978f-2ab0-3268-d40c8a06e692
 short_description: We identify genes associated with a biological process from human,
   mouse phenotypes, KEGG pathways and GO gene set libraries. We then find Consensus

@@ -1,6 +1,6 @@
 ---
 grant_num: U24OD038425
-layout: ../../layouts/Partnerships.astro
+layout: '@/layouts/Partnerships.astro'
 status: active
 title: Metabotyping Humans
 ---

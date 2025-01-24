@@ -1,7 +1,7 @@
 ---
 dccs:
 - Kids First
-layout: ../../layouts/Partnerships.astro
+layout: '@/layouts/Partnerships.astro'
 lead_dccs:
 - Kids First
 priority: 6.0

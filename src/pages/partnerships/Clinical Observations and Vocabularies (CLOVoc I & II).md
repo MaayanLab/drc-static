@@ -3,7 +3,7 @@ dccs:
 - Kids First
 - Metabolomics
 - SPARC
-layout: ../../layouts/Partnerships.astro
+layout: '@/layouts/Partnerships.astro'
 priority: 9.0
 status: completed
 title: Clinical Observations and Vocabularies (CLOVoc I & II)

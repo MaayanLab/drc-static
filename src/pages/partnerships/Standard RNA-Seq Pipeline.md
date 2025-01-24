@@ -4,7 +4,7 @@ dccs:
 - HuBMAP
 - Kids First
 - SPARC
-layout: ../../layouts/Partnerships.astro
+layout: '@/layouts/Partnerships.astro'
 lead_dccs:
 - HuBMAP
 priority: 4.0

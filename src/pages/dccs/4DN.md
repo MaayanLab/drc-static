@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: 4D Nucleome
 homepage: https://www.4dnucleome.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/4DN.png

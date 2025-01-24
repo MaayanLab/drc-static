@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: The Cellular Senescence Network
 homepage: https://sennetconsortium.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/SenNet.png

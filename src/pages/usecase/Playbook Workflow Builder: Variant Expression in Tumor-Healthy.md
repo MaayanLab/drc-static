@@ -3,7 +3,7 @@ creator_dcc:
 - Kids First
 image: /img/playbook_usecase7.png
 inputs: variant
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/7103143b-f178-7aa7-7753-9d4652ddc931
 short_description: We construct a joint plot showing how the variant's closest gene
   is expressed in tumors from KidsFirst and healthy human tissue from GTEx.

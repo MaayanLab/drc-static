@@ -4,7 +4,7 @@ creator_dcc:
 featured: true
 image: /img/usecase_mci.png
 inputs: disease
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://dd-kg-ui.cfde.cloud/use_cases/mw_diseases?edge_labels=true
 short_description: Find all IDG and GTEx assertions that may be related to mild cognitive
   impairment and any tissue type.

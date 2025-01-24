@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Undiagnosed Diseases Network
 homepage: https://undiagnosed.hms.harvard.edu/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/UDN.png

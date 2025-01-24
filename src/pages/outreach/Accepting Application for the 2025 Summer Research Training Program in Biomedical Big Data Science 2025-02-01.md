@@ -8,7 +8,7 @@ dcc:
 end_date: '2025-02-01T17:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/Maayan_program.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://labs.icahn.mssm.edu/maayanlab/summer-research-program/
 short_description: "The LINCS DCC Summer Research Training Program in Biomedical Big\
   \ Data Science is a research intensive ten-week training program for undergraduates\

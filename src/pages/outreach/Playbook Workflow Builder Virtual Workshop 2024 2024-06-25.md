@@ -8,7 +8,7 @@ dcc:
 end_date: 2024-06-25T014:00:00-04:00
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/pwb-w-2024.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://playbook-workflow-builder.cloud/events/2024-06-25
 short_description: The Playbook Workflow Builder (PWB) is a web-based platform that
   facilitates the interactive construction of workflows by enabling users. The workflows

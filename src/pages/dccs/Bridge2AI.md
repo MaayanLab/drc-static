@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Bridge to Artificial Intelligence
 homepage: https://bridge2ai.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/Bridge2AI.png

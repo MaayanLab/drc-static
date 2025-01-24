@@ -2,7 +2,7 @@
 featured: false
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/GSE-screenshot.png
 label: CFDE-GSE
-layout: ../../layouts/Tools.astro
+layout: '@/layouts/Tools.astro'
 short_description: CFDE-GSE is web-based application that serves gene set libraries
   created from CF programs datasets to provide an integrated cross program enrichment
   analysis.

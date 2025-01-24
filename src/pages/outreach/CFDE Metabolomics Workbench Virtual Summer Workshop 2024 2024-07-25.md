@@ -8,7 +8,7 @@ dcc:
 end_date: '2024-07-25T11:00:00-07:00'
 featured: true
 image: https://cfde-drc.s3.amazonaws.com/assets/img/Metabolomics.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://sc-cfdewebdev.sdsc.edu/MW/mwsw24.html
 short_description: UCSD Metabolomics Workbench ([MW](https://www.metabolomicsworkbench.org/)),
   as part of the NIH Common Fund Data Ecosystem ([CFDE](https://commonfund.nih.gov/dataecosystem))

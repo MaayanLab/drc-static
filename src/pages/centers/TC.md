@@ -2,7 +2,7 @@
 active: true
 grant_num: OT2OD037922
 label: The Training Center
-layout: ../../layouts/Centers.astro
+layout: '@/layouts/Center.astro'
 short_description: Fostering Meaningful Use of Common Fund Data
 short_label: TC
 ---

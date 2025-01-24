@@ -8,7 +8,7 @@ dcc:
 - 4DN
 featured: false
 image: https://cfde-drc.s3.amazonaws.com/assets/img/4dn_internship_2024.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://www.4dnucleome.org/internship/
 short_description: The 4DN Summer Undergraduate Program for Excellence in Research
   (SUPER) is seeking applications for a paid summer research internship for undergraduate

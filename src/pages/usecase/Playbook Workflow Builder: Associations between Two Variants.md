@@ -3,7 +3,7 @@ creator_dcc:
 - ExRNA
 image: /img/playbook_usecase8.png
 inputs: variant; variant
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/f79f7de5-391f-0e57-37cb-8ac9fc2628f1
 short_description: Given two variants, we find their closest genes and present combined
   knowledge about them including their expression in tumors & healthy tissue, interactions

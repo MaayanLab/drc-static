@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Gabriella Miller Kids First Pediatric Research
 homepage: https://kidsfirstdrc.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/Kids First.png

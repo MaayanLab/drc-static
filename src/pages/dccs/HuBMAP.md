@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Human BioMolecular Atlas Program
 homepage: https://hubmapconsortium.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/HuBMAP.png

@@ -8,7 +8,7 @@ dccs:
 - Kids First
 - LINCS
 - Metabolomics
-layout: ../../layouts/Partnerships.astro
+layout: '@/layouts/Partnerships.astro'
 lead_dccs:
 - LINCS
 priority: 10.0

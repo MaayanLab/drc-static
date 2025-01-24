@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Genotype Tissue Expression
 homepage: https://www.gtexportal.org/home/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/GTEx.png

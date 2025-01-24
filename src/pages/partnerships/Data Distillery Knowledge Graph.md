@@ -10,7 +10,7 @@ dccs:
 - LINCS
 - Metabolomics
 - SPARC
-layout: ../../layouts/Partnerships.astro
+layout: '@/layouts/Partnerships.astro'
 lead_dccs:
 - Kids First
 - HuBMAP

@@ -9,7 +9,7 @@ dcc:
 end_date: '2024-07-26T00:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.amazonaws.com/assets/img/GlyGen_internship_2024.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://wiki.glygen.org/index.php?title=GlyGen_Internships%2FGlyGen-CFDE_Summer_2024_Internship_Program_Announcement
 short_description: The GlyGen-CFDE project is seeking applications for a paid 8-week
   summer research in-person internship in 2024 for undergraduate and graduate students

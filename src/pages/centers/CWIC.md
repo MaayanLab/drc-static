@@ -2,7 +2,7 @@
 active: true
 grant_num: OT2OD037936
 label: The Cloud Workspace Implementation Center
-layout: ../../layouts/Centers.astro
+layout: '@/layouts/Center.astro'
 short_description: The CFDE Cloud Workspace
 short_label: CWIC
 ---

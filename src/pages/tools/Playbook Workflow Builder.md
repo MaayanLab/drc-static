@@ -3,7 +3,7 @@ featured: true
 icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
 image: /img/pwb-screenshot.png
 label: Playbook Workflow Builder
-layout: ../../layouts/Tools.astro
+layout: '@/layouts/Tools.astro'
 short_description: Web-based platform to construct biomedical workflows
 tutorial: '[  "https://www.youtube.com/watch?v=xfnaNJL5-8c",  "https://www.youtube.com/watch?v=k_3wLDWDj8M"
   ]'

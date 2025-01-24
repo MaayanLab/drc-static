@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Illuminating the Druggable Genome
 homepage: https://druggablegenome.net/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/IDG.png

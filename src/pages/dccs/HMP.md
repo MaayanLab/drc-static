@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: The Human Microbiome Project
 homepage: https://portal.hmpdacc.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/HMP.png

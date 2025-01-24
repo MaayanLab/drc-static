@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: GlyGen
 homepage: https://www.glygen.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/glygen.png

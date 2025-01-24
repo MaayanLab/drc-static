@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Human Heredity & Health in Africa
 homepage: https://h3africa.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/h3africa.png

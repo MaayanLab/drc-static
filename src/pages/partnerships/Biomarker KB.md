@@ -1,6 +1,6 @@
 ---
 grant_num: U24OD038423
-layout: ../../layouts/Partnerships.astro
+layout: '@/layouts/Partnerships.astro'
 status: active
 title: Biomarker KB
 website: https://biomarkerkb.org/

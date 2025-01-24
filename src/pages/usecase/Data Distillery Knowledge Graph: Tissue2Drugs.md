@@ -3,7 +3,7 @@ creator_dcc:
 - LINCS
 image: /img/app_tissue2drugs.png
 inputs: tissue
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://dd-kg-ui.cfde.cloud/dd_apps/tissue2drugs?edge_labels=true
 short_description: Find all genes that are highly expressed in a GTEx tissue and may
   be perturbed by a specific compound based on data from the LINCS L1000 dataset,

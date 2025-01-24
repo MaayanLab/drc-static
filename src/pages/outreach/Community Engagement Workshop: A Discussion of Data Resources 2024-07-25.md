@@ -5,7 +5,7 @@ cfde_specific: true
 end_date: '2024-07-25T00:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/cfworkshop2024.jpg
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://event.roseliassociates.com/osccommunityengagement/
 short_description: "Join the NIH Common Fund\u2019s collaborative discussion at the\
   \ Community Engagement Workshop! Learn how data accessibility, inclusivity, and\

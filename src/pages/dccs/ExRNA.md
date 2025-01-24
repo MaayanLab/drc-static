@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Extracellular RNA Communication
 homepage: https://exrna.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/exRNA.png

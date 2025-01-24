@@ -7,7 +7,7 @@ dcc:
 end_date: '2024-10-04T15:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/hubmap-fall2024.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://hubmapconsortium.org/2024-fall-hackathon/
 short_description: The 2024 HuBMAP Fall Hackathon will be held virtually with a focus
   on the HuBMAP Data Portal Workspaces. Workspaces are a new feature on the HuBMAP

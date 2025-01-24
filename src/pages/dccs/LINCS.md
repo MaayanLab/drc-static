@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Library of Integrated Network-based Cellular Signatures
 homepage: https://lincsproject.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/LINCS-logo.png

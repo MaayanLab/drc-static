@@ -5,7 +5,7 @@ cfde_specific: true
 end_date: '2025-01-23T15:00:00-05:00'
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/seminar-250123-1.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://mountsinai.zoom.us/webinar/register/WN_hFeb3FPHRYe4WpkuwvQ24w#/registration
 short_description: Members of the CFDE DRC will present a seminar that will demonstrate
   GeneSetCart, a new CFDE platform geared for the analysis of gene sets created from

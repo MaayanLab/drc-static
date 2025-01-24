@@ -8,7 +8,7 @@ dcc:
 end_date: '2024-08-09T00:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.amazonaws.com/assets/img/lincs_internship.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://labs.icahn.mssm.edu/maayanlab/summer-research-program/
 short_description: "This virtual symposium was hosted by the Ma\u2019ayan Lab and\
   \ the Mount Sinai Center for Bioinformatics on August 8, 2024. The symposium featured\

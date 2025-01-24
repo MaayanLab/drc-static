@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Molecular Transducers of Physical Activity Consortium
 homepage: https://motrpac-data.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/MoTrPAC.png

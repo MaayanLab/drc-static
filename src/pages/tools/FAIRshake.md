@@ -3,7 +3,7 @@ doi: https://doi.org/10.1016/j.cels.2019.09.011
 icon: /img/fairshake.png
 image: /img/fairshake-screenshot.png
 label: FAIRshake
-layout: ../../layouts/Tools.astro
+layout: '@/layouts/Tools.astro'
 short_description: Toolkit to evaluate the FAIRness of research digital resources
 url: https://fairshake.cloud/
 ---

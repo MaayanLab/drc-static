@@ -3,7 +3,7 @@ creator_dcc:
 - Metabolomics
 image: /img/playbook_usecase6_2.png
 inputs: gene
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/60086ff7-2a49-195a-9682-146e763e32cc
 short_description: We query several CFDE data sources for information about the gene
   provided.

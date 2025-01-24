@@ -2,7 +2,7 @@
 featured: true
 image: /img/rna-seq_pipeline.png
 label: Standard RNA-seq Processing Pipelines
-layout: ../../layouts/Tools.astro
+layout: '@/layouts/Tools.astro'
 short_description: Revised STAR RNA-seq aligner to update RNA-seq pipelines across
   CF programs
 url: https://github.com/hubmapconsortium/salmon-rnaseq

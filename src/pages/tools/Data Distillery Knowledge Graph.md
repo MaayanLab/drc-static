@@ -2,7 +2,7 @@
 icon: /img/ubkg.png
 image: /img/ubkg-screenshot.png
 label: Data Distillery Knowledge Graph
-layout: ../../layouts/Tools.astro
+layout: '@/layouts/Tools.astro'
 short_description: KG database represents interrelated biomedical ontologies and vocabularies
 url: https://dd-kg-ui.cfde.cloud/
 ---

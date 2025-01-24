@@ -9,7 +9,7 @@ dcc:
 end_date: '2024-03-21T00:00:00-04:00'
 featured: false
 image: https://cfde-drc.s3.amazonaws.com/assets/img/4dn_hackathon_2024.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://hack4dnucleome.github.io/
 short_description: "4DN Hackathon offers participants the chance to explore genome\
   \ organization, build something novel, learn from peers, and get familiar with the\

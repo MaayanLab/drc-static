@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Stimulating Peripheral Activity to Relieve Conditions
 homepage: https://sparc.science/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/SPARC.svg

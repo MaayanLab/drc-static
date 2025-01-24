@@ -7,7 +7,7 @@ dccs:
 - IDG
 - Metabolomics
 - SPARC
-layout: ../../layouts/Partnerships.astro
+layout: '@/layouts/Partnerships.astro'
 priority: 12.0
 status: completed
 title: COMPA

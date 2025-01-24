@@ -3,7 +3,7 @@ creator_dcc:
 - LINCS
 image: /img/g2sg_axd.png
 inputs: gene sets
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://genesetcart.cfde.cloud/use-cases
 short_description: Alexander disease (AxD) is caused by a GFAP gene mutation, leading
   to an accumulation of GFAP protein. This excess GFAP leads to Rosenthal fibers (RFs)

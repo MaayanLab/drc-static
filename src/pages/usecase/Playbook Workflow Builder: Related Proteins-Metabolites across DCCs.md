@@ -4,7 +4,7 @@ creator_dcc:
 featured_image: /img/usecase11.png
 image: /img/playbook_usecase11.png
 inputs: gene
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/24f9b280-82fa-4fb3-94e9-1ad80c7b9f3e
 short_description: Using directly related proteins to a gene of interest, we return
   a slew of related information to the gene protein network from different DCCs.

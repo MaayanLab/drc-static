@@ -6,7 +6,7 @@ dcc:
 - SPARC
 featured: false
 image: https://cfde-drc.s3.amazonaws.com/assets/img/SPARC_officehour.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://docs.sparc.science/docs/sparc-drc-open-office-hours
 short_description: The SPARC Data and Resource Center (DRC) hosts regular open office
   hours to support the scientific community. Each session is hosted by experts with

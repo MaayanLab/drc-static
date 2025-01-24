@@ -4,7 +4,7 @@ carousel: false
 cfde_specific: false
 featured: false
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/UDN.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://harvard.zoom.us/webinar/register/WN_9irM6pBCRYefWmHLrQ7Kdg#/registration
 short_description: Presentations from UDN sites and cores typically describe the clinical
   phenotype and multidisciplinary, personalized diagnostic evaluation of one or more

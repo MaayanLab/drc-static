@@ -9,7 +9,7 @@ dcc:
 end_date: '2024-08-16T00:00:00-04:00'
 featured: false
 image: https://cfde-drc.s3.amazonaws.com/assets/img/hubmap_internship.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://hubmapconsortium.org/internship-program/
 short_description: "The Undergraduate Student Internship Program provides the opportunity\
   \ for undergraduate students from US colleges and universities to receive mentorship\

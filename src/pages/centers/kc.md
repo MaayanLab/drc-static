@@ -4,7 +4,7 @@ grant_num: OT2OD036440
 homepage: https://hugeamp.org/research.html?pageid=kc_landing
 icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/cfde_kc_logo.svg
 label: The Knowledge Center
-layout: ../../layouts/Centers.astro
+layout: '@/layouts/Center.astro'
 short_description: Providing Scientifically Valid Knowledge from the Common Fund Data
   Ecosystem
 short_label: KC

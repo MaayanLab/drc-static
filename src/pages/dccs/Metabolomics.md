@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/DCC.astro
+layout: '@/layouts/DCC.astro'
 label: Metabolomics
 homepage: https://www.metabolomicsworkbench.org/
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/Metabolomics.png

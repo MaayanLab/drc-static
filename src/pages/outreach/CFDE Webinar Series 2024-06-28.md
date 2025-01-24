@@ -15,7 +15,7 @@ dcc:
 end_date: '2024-06-28T14:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/cfde-webinar-0624.jpg
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: /info/training_and_outreach/cfde-webinar-series
 short_description: The CFDE Webinar Series brings the varied programs of the CFDE
   to the broad biomedical research community. The title for the month is Illuminating

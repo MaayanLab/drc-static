@@ -9,7 +9,7 @@ dcc:
 end_date: '2026-06-01T00:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/hubmap-2025-fellow.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://hubmapconsortium.org/jumpstart-program/
 short_description: The HuBMAP JumpStart fellowship offers junior investigators working
   on human atlasing projects the opportunity to take a leadership role in conducting

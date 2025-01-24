@@ -4,7 +4,7 @@ creator_dcc:
 featured_image: /img/usecase3.png
 image: /img/playbook_usecase3.png
 inputs: gene signature; gene signature
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://playbook-workflow-builder.cloud/report/4153d6c3-0d1f-ba10-eeb6-c7792318c042
 short_description: Using differential expression signatures from two independent sources,
   identify and rank Consensus L1000 Small Molecules capable of reversing the expression

@@ -8,7 +8,7 @@ dcc:
 end_date: '2024-02-06T00:00:00-05:00'
 featured: false
 image: https://cfde-drc.s3.amazonaws.com/assets/img/blood-vessel-segmentation.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://www.kaggle.com/competitions/blood-vessel-segmentation
 short_description: The goal of this competition is to segment blood vessels. You will
   create a model trained on 3D Hierarchical Phase-Contrast Tomography (HiP-CT) data

@@ -3,7 +3,7 @@ featured: false
 icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/g2sg-logo.png
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/g2sg-screenshot.png
 label: GeneSetCart
-layout: ../../layouts/Tools.astro
+layout: '@/layouts/Tools.astro'
 short_description: GeneSetCart is interactive web-based application that enables users
   to fetch gene sets, augment, perform set operations, visualize, and analyze gene
   sets in a single session.

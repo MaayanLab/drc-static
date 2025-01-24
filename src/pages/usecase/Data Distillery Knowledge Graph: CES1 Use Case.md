@@ -3,7 +3,7 @@ creator_dcc:
 - LINCS
 image: /img/usecase_ces1.png
 inputs: gene
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://dd-kg-ui.cfde.cloud/use_cases/enzyminer?edge_labels=true
 short_description: Display drugs that up or down regulate the gene CES1 from LINCS
   as well as tissues where it is highly expressed based on assertions from GTEx.

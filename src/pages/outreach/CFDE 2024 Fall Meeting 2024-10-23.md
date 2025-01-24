@@ -5,7 +5,7 @@ cfde_specific: true
 end_date: '2024-10-23T00:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/cfde-fall-2024.png
-layout: ../../layouts/Outreach.astro
+layout: '@/layouts/Outreach.astro'
 link: https://cfdeconnect.org/cfde-2024-fall-meeting/
 short_description: The CFDE Fall face-to-face (F2F) meeting will feature announcements
   about upcoming data from <a href="https://info.cfde.cloud/dcc/Bridge2AI" target="_blank"

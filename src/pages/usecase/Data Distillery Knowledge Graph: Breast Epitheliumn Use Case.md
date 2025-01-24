@@ -3,7 +3,7 @@ creator_dcc:
 - LINCS
 image: /img/usecase_BreastEpithelium.png
 inputs: tissue
-layout: ../../layouts/UseCase.astro
+layout: '@/layouts/UseCase.astro'
 link: https://dd-kg-ui.cfde.cloud/use_cases/tissue2drugs?edge_labels=true
 short_description: Find the genes that are highly expressed in breast epithelium as
   well as drugs that target these genes.
