@@ -9,23 +9,24 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [
-      tailwind({
-        applyBaseStyles: false,
-      }),
-      react(),
-      mdx(),
-    ],
-    vite: {
-      server: {
-          watch: {
-              usePolling: true,
-          }
+  base: '/drc-static',
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    react(),
+    mdx(),
+  ],
+  vite: {
+    server: {
+        watch: {
+            usePolling: true,
+        }
+    },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'),
       },
-      resolve: {
-        alias: {
-          '@': path.resolve(__dirname, './src'),
-        },
-      },
+    },
   },
 });
