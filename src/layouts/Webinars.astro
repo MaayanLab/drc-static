@@ -1,8 +1,19 @@
 ---
 import '@/styles/base.css'
 import Layout from '@/components/Layout.astro'
-const { frontmatter } = Astro.props
+import WebinarCard from '@/components/WebinarCard.astro'
+const webinars = Object.values(import.meta.glob('@/pages/webinars/*.md', { eager: true })).filter(webinar => webinar.frontmatter.layout === '@/layouts/Webinar.astro')
 ---
+
 <Layout>
 	<slot />
+	<h2>Upcoming Webinars</h2>
+	<div class="flex flex-col gap-2">
+		{webinars.filter(webinar => (new Date(webinar.frontmatter.end_date)).getTime() >= Date.now()).map(webinar => <WebinarCard webinar={webinar} />)}
+	</div>
+	<h2>Past Webinars</h2>
+	<div class="flex flex-col gap-2">
+		{webinars.filter(webinar => (new Date(webinar.frontmatter.end_date)).getTime() < Date.now()).map(webinar => <WebinarCard webinar={webinar} />)}
+	</div>
+
 </Layout>

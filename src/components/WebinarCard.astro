@@ -1,0 +1,27 @@
+---
+const { webinar } = Astro.props
+---
+
+<div class="flex flex-col border-b">
+  <h3>{new Date(webinar.frontmatter.start_date).toLocaleDateString('default', {month: 'short', year: 'numeric', day: '2-digit', weekday: 'long'})}</h3>
+  {webinar.frontmatter.agenda.map(section =>
+    <div>
+      <h4>{section.label}</h4>
+      {section.presenters && section.presenters.length > 0 && section.presenters.map(presenter =>
+        <div>
+          <h5>{presenter.presenter}</h5>
+          <h5><em>{presenter.affiliation}</em></h5>
+        </div>
+      )}
+      <div>
+        {section.summary ?
+          <>
+            <strong>Summary</strong>
+            <div class="overflow-ellipsis">{section.summary}</div>
+          </>
+        : <div>The summary and video for the webinar will be added shortly.</div>}
+        {section.video_link && <a href={section.video_link} target="_blank" rel="noopener noreferrer">WATCH VIDEO ON YOUTUBE</a>}
+      </div>
+    </div>
+  )}
+</div>
