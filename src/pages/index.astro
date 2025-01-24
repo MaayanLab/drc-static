@@ -21,13 +21,22 @@ const dccs = Object.values(import.meta.glob('./dccs/*.md', { eager: true }))
 	</head>
 	<body>
 		<main>
-			<h1>Common Fund programs partnered with the CFDE</h1>
-			<p>The NIH Common Fund is a funding entity within the NIH that supports bold scientific programs that catalyze discovery across all biomedical and behavioral research.</p>
-			{dccs.map(dcc =>
-				<a href={`dccs/${dcc.frontmatter.short_label}`}>
-					<img src={dcc.frontmatter.icon} />
-				</a>
-			)}
+			<h1 class="text-4xl font-bold">Common Fund Programs Partnered with the CFDE</h1>
+			<div class="grid grid-cols-3 gap-8">
+				{dccs.map(dcc =>
+					<div class="flex flex-col justify-start items-stretch">
+						<div class="flex flex-row justify-around items-center">
+							<div class="flex w-24 h-24 justify-center items-center"><img src={dcc.frontmatter.icon} class="max-w-24 max-h-24" /></div>
+							<span class="font-bold text-lg">{dcc.frontmatter.short_label}</span>
+						</div>
+						<p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical;">{dcc.rawContent()}</p>
+						<div class="flex flex-row justify-around">
+							<a class="font-bold" href={dcc.url}>Expand</a>
+							<a class="font-bold" href={dcc.frontmatter.homepage} target="_blank">Go to DCC portal</a>
+						</div>
+					</div>
+				)}
+			</div>
 		</main>
 	</body>
 </html>
