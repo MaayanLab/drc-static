@@ -16,7 +16,8 @@ short_description: UCSD Metabolomics Workbench ([MW](https://www.metabolomicswor
   [here](https://sc-cfdewebdev.sdsc.edu/MW/mwsw24.html) for additional information
   and registration.
 start_date: '2024-07-22T08:00:00-07:00'
-tags: '["workshop"]'
+tags: 
+- workshop
 title: CFDE Metabolomics Workbench Virtual Summer Workshop 2024
 ---
 UCSD Metabolomics Workbench ([MW](https://www.metabolomicsworkbench.org/)), as part of the NIH Common Fund Data Ecosystem ([CFDE](https://commonfund.nih.gov/dataecosystem)) is pleased to announce a 4-day virtual Summer Workshop on July 22-25, 2024. Click [here](https://sc-cfdewebdev.sdsc.edu/MW/mwsw24.html) for additional information and registration.

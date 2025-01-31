@@ -17,7 +17,8 @@ short_description: Join us for an engaging hands-on workshop where Meenu Sriniva
   Ecosystem (CFDE) Data Coordinating Center portals followed by an interactive Q&A
   session.
 start_date: '2024-09-12T13:00:00-04:00'
-tags: '["workshop"]'
+tags: 
+- workshop
 title: Biomarker discovery from extracellular (cell-free) RNA-seq and tissue of origin
   from GTEx RNA-seq profiles
 ---

@@ -18,7 +18,8 @@ short_description: The CFDE Fall face-to-face (F2F) meeting will feature announc
   topics will include building methods for sustainability and harmonizing CFDE data
   to answer integrative questions.
 start_date: '2024-10-22T00:00:00-04:00'
-tags: '["face to face meeting"]'
+tags: 
+- face to face meeting
 title: CFDE 2024 Fall Meeting
 ---
-The CFDE Fall face-to-face (F2F) meeting will feature announcements about upcoming data from ([Bridge2AI](https://info.cfde.cloud/dcc/Bridge2AI)), ([SenNet](https://info.cfde.cloud/dcc/SenNet), ([HubMAP](https://info.cfde.cloud/dcc/HuBMAP)), and ([MoTrPAC](https://info.cfde.cloud/dcc/MoTrPAC)), along with multiple brainstorming sessions discussing the future of CFDE. Special topics will include building methods for sustainability and harmonizing CFDE data to answer integrative questions.
+The CFDE Fall face-to-face (F2F) meeting will feature announcements about upcoming data from ([Bridge2AI](https://info.cfde.cloud/dcc/Bridge2AI)), ([SenNet](https://info.cfde.cloud/dcc/SenNet)), ([HubMAP](https://info.cfde.cloud/dcc/HuBMAP)), and ([MoTrPAC](https://info.cfde.cloud/dcc/MoTrPAC)), along with multiple brainstorming sessions discussing the future of CFDE. Special topics will include building methods for sustainability and harmonizing CFDE data to answer integrative questions.

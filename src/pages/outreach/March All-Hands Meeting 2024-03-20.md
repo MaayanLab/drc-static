@@ -12,7 +12,8 @@ short_description: The CFDE Program Team is pleased to announce we will be holdi
   will be coming soon including registration links for the meeting and hotel booking
   links.
 start_date: '2024-03-19T00:00:00-04:00'
-tags: '["face to face meeting"]'
+tags: 
+- face to face meeting
 title: March All-Hands Meeting
 ---
 The CFDE Program Team is pleased to announce we will be holding the annual CFDE Program Meeting on March 19-20, 2024 in Bethesda, MD. More details will be coming soon including registration links for the meeting and hotel booking links.

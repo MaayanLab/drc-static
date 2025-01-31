@@ -12,7 +12,8 @@ short_description: The MoTrPAC Bioinformatics Center (BIC) hosts monthly open of
   hours to support the scientific community. Each session is hosted by one member
   from our infrastructure team and one from our bioinformatics team with a focus on
   the discussions of MoTrPAC data.
-tags: '["office hours"]'
+tags: 
+- office hours
 title: MoTrPAC Office Hours
 ---
 The MoTrPAC Bioinformatics Center (BIC) hosts monthly open office hours to support the scientific community. Each session is hosted by one member from our infrastructure team and one from our bioinformatics team with a focus on the discussions of MoTrPAC data.

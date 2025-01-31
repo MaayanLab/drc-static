@@ -13,7 +13,8 @@ short_description: An ancillary session at ASHG will be held to share the perspe
   Knowledge Center (KC), the Data Resource Center (DRC), and the MoTrPAC data coordination
   center (DCC).
 start_date: '2024-11-06T11:45:00-07:00'
-tags: '["conference"]'
+tags: 
+- conference
 title: A Human Geneticists' Guide to the Common Fund Data Ecosystem
 ---
 An ancillary session at ASHG will be held to share the perspectives about the the NIH Common Fund Data Ecosystem (CFDE) by NIH representatives, the Knowledge Center (KC), the Data Resource Center (DRC), and the MoTrPAC data coordination center (DCC).

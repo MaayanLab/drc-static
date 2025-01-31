@@ -11,7 +11,8 @@ short_description: Members of the CFDE DRC will present a seminar that will demo
   GeneSetCart, a new CFDE platform geared for the analysis of gene sets created from
   various Common Fund programs data sources.
 start_date: '2025-01-23T14:00:00-05:00'
-tags: '["workshop"]'
+tags: 
+- workshop
 title: Multi-Omics AI-Driven Gene Set Analysis with GeneSetCart
 ---
 The CFDE Workbench Tool Festival is a monthly workshop that features CFDE-developed tools. To start, it will showcase the GeneSetCart, which enables gene sets to be retrieved from various Common Fund program data sources and offers CFDE GMT crossings and other gene set operations.

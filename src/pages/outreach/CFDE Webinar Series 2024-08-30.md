@@ -14,7 +14,8 @@ short_description: The CFDE Webinar Series was established to share with the com
   as about the CFDE as a whole and its DCCs. This month we will feature the Acute
   to Chronic Pain Signatures (A2CPS) DCC.
 start_date: '2024-08-30T13:00:00-04:00'
-tags: '["webinar"]'
+tags: 
+- webinar
 title: CFDE Webinar Series
 ---
 The CFDE Webinar Series was established to share with the community information about the Common Fund programs that participate in the CFDE, as well as about the CFDE as a whole and its DCCs. This month we will feature the Acute to Chronic Pain Signatures (A2CPS) DCC.

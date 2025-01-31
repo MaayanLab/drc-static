@@ -14,7 +14,9 @@ short_description: "The 2025 Bridge2AI \u2013 Voice Symposium and Hackathon is a
   \ patients, clinicians, technology experts and students, all with a shared passion\
   \ for the transformative potential of voice biomarkers in healthcare. "
 start_date: '2025-04-22T10:00:00-05:00'
-tags: '["hackathon", "symposium"]'
+tags: 
+- hackathon
+- symposium
 title: 2025 Voice AI Symposium and Hackathon
 ---
 The 2025 Bridge2AI – Voice Symposium and Hackathon is an interactive conference that brings together scientists, ethicists, advocates, patients, clinicians, technology experts and students, all with a shared passion for the transformative potential of voice biomarkers in healthcare. 

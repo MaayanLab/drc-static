@@ -15,7 +15,8 @@ short_description: 'The meeating will be an opportunity for researchers and expe
   Bridge Center (BC) will present highlights of their research and facilitate discussions
   aligned with the theme of the meeting.'
 start_date: '2024-12-05T12:00:00-05:00'
-tags: '["symposium"]'
+tags: 
+- symposium
 title: Bridge2AI Fall 2024 Leadership Meeting
 ---
 The meeating will be an opportunity for researchers and experts to engage in vibrant discussions. The theme of the Fall Leadership Meeting is: Cross Consortium Synergies. Representatives from all the Grand Challenges (GC) and the Bridge Center (BC) will present highlights of their research and facilitate discussions aligned with the theme of the meeting.

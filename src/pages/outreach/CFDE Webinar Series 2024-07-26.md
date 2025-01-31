@@ -16,7 +16,8 @@ short_description: "The CFDE Webinar Series features HuBMAP and SenNet DCCs abou
   \ Director for CNS provide a tour of the Human Reference Atlas (HRA) while highlighting\
   \ their work mapping data from the heart, kidney, and lung. "
 start_date: '2024-07-26T13:00:00-04:00'
-tags: '["webinar"]'
+tags: 
+- webinar
 title: CFDE Webinar Series
 ---
 The CFDE Webinar Series features HuBMAP and SenNet DCCs about A Tour of the Human Reference Atlas v2.1. Katy Börner, Center Director for the Cyberinfrastructure for Network Science Center (CNS), and Bruce Herr, Technical Director for CNS provide a tour of the Human Reference Atlas (HRA) while highlighting their work mapping data from the heart, kidney, and lung. 

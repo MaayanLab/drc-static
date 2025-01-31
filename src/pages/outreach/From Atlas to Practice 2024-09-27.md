@@ -16,7 +16,8 @@ short_description: Accelerating the Convergence of Spatial Biology and Pathology
   and pathology. You can help shape how large-scale spatial atlas research can be
   used to directly impact patient care.
 start_date: '2024-09-23T00:00:00-04:00'
-tags: '["workshop"]'
+tags: 
+- workshop
 title: From Atlas to Practice
 ---
 Accelerating the Convergence of Spatial Biology and Pathology! Join the NIH Innovation Lab "FROM ATLAS TO PRACTICE" where you can help shape how large-scale spatial atlas research can be used to directly impact patient care.

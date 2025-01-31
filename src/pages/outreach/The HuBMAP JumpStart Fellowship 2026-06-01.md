@@ -18,7 +18,8 @@ short_description: The HuBMAP JumpStart fellowship offers junior investigators w
   junior researchers, and to promote collaboration among HuBMAP and the atlas-building
   community.
 start_date: '2025-06-01T00:00:00-04:00'
-tags: '["fellowship"]'
+tags: 
+- fellowship
 title: The HuBMAP JumpStart Fellowship
 ---
 The HuBMAP JumpStart fellowship offers junior investigators working on human atlasing projects the opportunity to take a leadership role in conducting synergistic, collaborative research projects within the HuBMAP consortium. These projects will build on work that already exists in HuBMAP by either extending aims of current  awards or as a new but related research project. The goal of this program is two-fold: 1) create a mentored, career development opportunity for promising junior researchers, and 2) promote collaboration among HuBMAP and the atlas-building community.

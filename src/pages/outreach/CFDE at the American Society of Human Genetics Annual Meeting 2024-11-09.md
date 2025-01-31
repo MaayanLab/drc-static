@@ -12,7 +12,8 @@ short_description: "The CFDE will be showcased at the American Society of Human 
   \ Center (DRC), Kids First DCC, MoTrPAC DCC, and other CFDE representatives.\_To\
   \ learn more, visit us at booths #571 and #1120!"
 start_date: '2024-11-05T12:00:00-04:00'
-tags: '["conference"]'
+tags: 
+- conference
 title: CFDE at the American Society of Human Genetics Annual Meeting
 ---
 The CFDE Knowledge Center (KC), the CFDE Data Resource Center (DRC),  and the Kids First DCC plan to participate in the American Society of Human Genetics Annual Meeting in Denver, Colorado.
