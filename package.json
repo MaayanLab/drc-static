@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "^6.0.2",
     "@astrojs/mdx": "^4.0.5",
     "@astrojs/react": "^4.1.4",
     "@astrojs/tailwind": "^5.1.5",
@@ -17,6 +18,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "astro": "^5.1.6",
+    "astro-remote": "^0.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwindcss": "^3.4.17"
