@@ -13,6 +13,15 @@
     -webkit-box-orient: vertical;
   }
 }
+:root {
+  --primary-main: #C3E1E6;
+  --primary-light: #DBEDF0;
+  --primary-dark: #84A9AE;
+
+  --secondary-main: #2D5986;
+  --secondary-light: #9CBCDE;
+  --secondary-dark: #122436;
+}
 
 .hanken-grotesk-500 {
   font-family: "Hanken Grotesk", serif;
@@ -26,4 +35,143 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+.title {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.title-small {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.h1 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: var(--secondary-main);
+}
+
+.h2 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--secondary-main);
+}
+
+.h3 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--secondary-main);
+}
+
+.h4 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--secondary-main);
+}
+
+.h5 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--secondary-main);
+}
+
+.subtitle1 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.subtitle2 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.dm-sans-500 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.body1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.body2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.caption {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.caption-sm {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.nav {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #2D5986;
+  padding: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.nav:hover {
+  background-color: #f3f4f6;
+ }
+
+.footer {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+  .chip {
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .chip-main {
+    background-color: var(--primary-main);
+    color: var(--secondary-main);
+  }
+  
+  .chip-secondary {
+    background-color: var(--secondary-main);
+    color: white;
+  }
+
+.hanken-grotesk {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
 }
