@@ -14,7 +14,8 @@ short_description: The 2024 HuBMAP Fall Hackathon will be held virtually with a 
   Data Portal that enable lightweight exploration of public HuBMAP data and user-provided
   data using Python and R in a Jupyter Lab environment hosted by HuBMAP at no cost.
 start_date: '2024-09-20T00:00:00-04:00'
-tags: '["hackathon"]'
+tags: 
+- hackathon
 title: 'The 2024 HuBMAP Fall Hackathon '
 ---
 The 2024 HuBMAP Fall Hackathon will be held virtually with synchronous meetings on September 20th and October 4th, and asynchronous hackathon activities during the two weeks between, with a focus on the HuBMAP Data Portal Workspaces. 

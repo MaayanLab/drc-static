@@ -11,7 +11,8 @@ link: https://www.coursera.org/learn/bd2k-lincs
 short_description: 'In this course the LINCS DCC covers computational methods including:
   clustering, gene-set enrichment analysis, interactive data visualization, and supervised
   learning applied to the LINCS program datasets.'
-tags: '["course"]'
+tags: 
+- course
 title: 'Coursera Course: Big Data Science with the BD2K-LINCS Data Coordination and
   Integration Center'
 ---

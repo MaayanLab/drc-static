@@ -13,7 +13,8 @@ short_description: The COMPA team will share an overview of the project followed
   interviews, workshops, and online presentations for targeted feedback and market
   validation and share methods to ensure data-driven outreach.
 start_date: '2024-11-22T13:00:00-05:00'
-tags: '["webinar"]'
+tags: 
+- webinar
 title: CFDE Webinar Series
 ---
 The COMPA team will share an overview of the project followed by strategies to help the audience promote awareness and adoption of their products and tools from MetaCell. We will discuss the cost-benefit of strategies such as interviews, workshops, and online presentations for targeted feedback and market validation and share methods to ensure data-driven outreach.

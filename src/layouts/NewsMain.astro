@@ -1,0 +1,124 @@
+---
+import "@/styles/base.css";
+import Layout from "@/components/Layout.astro";
+const news = Object.values(
+  import.meta.glob("@/pages/news/*.md", { eager: true }),
+)
+  .filter((news) => news.frontmatter.layout === "@/layouts/News.astro")
+  .sort((b, a) =>
+    (a.frontmatter.date || "").localeCompare(b.frontmatter.date || ""),
+  );
+
+const formatDate = (date: string) => {
+  return new Date(date).toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};
+---
+
+<Layout>
+  <!-- Main content from the index.md -->
+
+    <slot />
+
+  <div class="w-full mt-12">
+  {
+    news.map((item, i) => (
+
+        <hr class="border-gray-200 my-2" />
+        <div class="w-full">
+          {/* Title and date */}
+          <div class="flex items-end justify-start ">
+            <div class="">
+              <h4 class="mb-0 pb-0 mt-2">{item.frontmatter.title}</h4>
+            </div>
+            <div class=" text-secondary-main text-sm ml-4">
+              {formatDate(item.frontmatter.date)}
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-8 mt-4">
+            {/* Content section */}
+            <div
+              class={`flex-grow ${item.frontmatter.img ? "md:w-2/3" : "w-full"}`}
+            >
+              {/* Version */}
+              {item.frontmatter.version && (
+                <p class="text-gray-600 mt-2">
+                  Version {item.frontmatter.version}
+                </p>
+              )}
+
+              {/* Description */}
+              {item.frontmatter.description && (
+                <div class="mt-4 mb-8">
+                  <p class="text-gray-600">{item.frontmatter.description}</p>
+
+                  {/* Supplementary lists */}
+                  {item.frontmatter.supp_description && (
+                    <ul class="mt-4 ml-6 list-disc text-gray-600">
+                      {item.frontmatter.supp_description.map((desc: string) => (
+                        <li class="mt-1">{desc}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              )}
+
+              {/* Learn more link */}
+              {item.frontmatter.link && (
+                <div class="flex justify-end">
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class=" items-center px-4 py-2 text-xs font-medium text-secondary-main hover:bg-gray-100"
+                  >
+                    Learn more →
+                  </a>
+                </div>
+              )}
+
+              {/* Tags */}
+              <div class="flex flex-wrap gap-2 mt-4 mb-8">
+                {item.frontmatter.portal && (
+                  // <span class="px-3 py-2 text-xs bg-primary-main text-secondary-main rounded-md">
+                    <span class=" chip chip-main caption">
+                    {item.frontmatter.portal}
+                  </span>
+                )}
+                {item.frontmatter.tags &&
+                  item.frontmatter.tags.map((tag: string) => (
+                    <span class="chip chip-secondary caption">
+                      {tag}
+                    </span>
+                  ))}
+              </div>
+            </div>
+
+            {/* Image section */}
+            {item.frontmatter.img && (
+              <div class="md:w-1/3">
+                <img
+                  src={item.frontmatter.img}
+                  alt={item.frontmatter.title}
+                  class="w-full h-auto object-contain"
+                  loading="lazy"
+                />
+              </div>
+            )}
+          </div>
+        </div>
+     
+    ))
+  }
+   </div>
+</Layout>
+<style>
+  /* Add any additional custom styles here */
+  .text-gray-600 {
+    line-height: 1.6;
+  }
+</style>

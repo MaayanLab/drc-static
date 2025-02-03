@@ -16,7 +16,8 @@ short_description: "This virtual symposium hosted by the Ma\u2019ayan Lab and th
   \ and knowledge graphs in the field of biomedical data science and bioinformatics,\
   \ leveraging the power of AI and other computational tools and methods."
 start_date: '2024-08-08T10:00:00-04:00'
-tags: '["symposium"]'
+tags: 
+- symposium
 title: LINCS Summer Trainees Virtual Symposium 2024
 ---
 A virtual symposium hosted by the Ma’ayan Lab and the Mount Sinai Center for Bioinformatics will feature the accomplishments made by 10 summer trainees during a 10-week research-intensive full-time training program. The projects cover topics such as data integration, data visualization, LLM integration, and Knowledge Graphs in the field of biomedical data science and bioinformatics, leveraging the power of AI and other computational tools and methods.

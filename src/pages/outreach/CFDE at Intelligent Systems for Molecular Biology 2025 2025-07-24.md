@@ -11,7 +11,8 @@ short_description: "Representative from several CFDE participating Common Fund p
   \ DCCs plan to attend the Intelligent Systems for Molecular Biology (ISMB) 2025\
   \ in Liverpool, UK."
 start_date: '2025-07-20T12:00:00-01:00'
-tags: '["conference"]'
+tags: 
+- conference
 title: CFDE at Intelligent Systems for Molecular Biology 2025
 ---
 Representative from several CFDE participating Common Fund programs’ DCCs plan to attend the Intelligent Systems for Molecular Biology (ISMB) 2025 in Liverpool, UK.

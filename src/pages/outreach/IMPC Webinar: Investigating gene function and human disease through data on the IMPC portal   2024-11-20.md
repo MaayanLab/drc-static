@@ -13,7 +13,8 @@ short_description: The webinar will offer an overview of how IMPC data is genera
   and how the PhenoDigm algorithm can be applied to identify new models of human disease-gene
   associations.
 start_date: '2024-11-20T10:30:00-05:00'
-tags: '["webinar"]'
+tags: 
+- webinar
 title: 'IMPC Webinar: Investigating gene function and human disease through data on
   the IMPC portal  '
 ---

@@ -8,7 +8,8 @@ image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/cfde-centers.png
 layout: '@/layouts/Outreach.astro'
 link: /info/centers
 short_description: '-'
-tags: '["none"]'
+tags: 
+- none
 title: CFDE Centers
 ---
 -

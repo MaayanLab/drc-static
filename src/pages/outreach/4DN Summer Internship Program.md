@@ -14,7 +14,8 @@ short_description: The 4DN Summer Undergraduate Program for Excellence in Resear
   (SUPER) is seeking applications for a paid summer research internship for undergraduate
   students. Students will be hosted by labs participating in the 4DN program, studying
   the structure and function of the nucleus.
-tags: '["internship"]'
+tags: 
+- internship
 title: 4DN Summer Internship Program
 ---
 The 4DN Summer Undergraduate Program for Excellence in Research (SUPER) is seeking applications for a paid summer research internship for undergraduate students. Students will be hosted by labs participating in the 4DN program, studying the structure and function of the nucleus. The individual opportunities are experimental, computational or both in labs using genomics, imaging or both. The internship will provide an opportunity for students to build connections, gain scientific skills, and conduct research. NIH encourages the participation of individuals from populations that are underrepresented in the biomedical, clinical, behavioral and social sciences.

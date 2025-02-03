@@ -18,42 +18,42 @@ const toCamelCase = (str: String) => {
 			<PublicationCitation publication={publication.frontmatter} />
 			<div class="flex space-x-1 items-center justify-end">
 				{ publication.frontmatter.pmid && 
-						<a class="hover:bg-gray-100 text-primary p-4" target="_blank" rel="noopener noreferrer" href={`https://pubmed.ncbi.nlm.nih.gov/${publication.frontmatter.pmid}/`}>
+						<a class="hover:bg-gray-100 text-secondary-main p-4" target="_blank" rel="noopener noreferrer" href={`https://pubmed.ncbi.nlm.nih.gov/${publication.frontmatter.pmid}/`}>
 							PubMed
 						</a>
 				}
 				{ publication.frontmatter.pmcid && 
-						<a class="hover:bg-gray-100 text-primary p-4" target="_blank" rel="noopener noreferrer" href={`https://www.ncbi.nlm.nih.gov/pmc/articles/${publication.frontmatter.pmcid}/`}>
+						<a class="hover:bg-gray-100 text-secondary-main p-4" target="_blank" rel="noopener noreferrer" href={`https://www.ncbi.nlm.nih.gov/pmc/articles/${publication.frontmatter.pmcid}/`}>
 							PMC
 						</a>
 				}
 				{ publication.frontmatter.doi && 
-						<a class="hover:bg-gray-100 text-primary p-4" target="_blank" rel="noopener noreferrer" href={`https://www.doi.org/${publication.frontmatter.doi}`}>
+						<a class="hover:bg-gray-100 text-secondary-main p-4" target="_blank" rel="noopener noreferrer" href={`https://www.doi.org/${publication.frontmatter.doi}`}>
 							DOI
 						</a>
 				}
 				{ publication.frontmatter.pmcid && 
-						<a class="hover:bg-gray-100 text-primary p-4">Export citation {publication.frontmatter.pmcid}</a>
+						<a class="hover:bg-gray-100 text-secondary-main p-4">Export citation </a>
 				}
 				{publication.frontmatter.landmark &&
-						<div class="bg-primary text-secondary rounded-lg px-4 py-1">
+						<div class="chip chip-secondary caption">
 							Landmark
 						</div>
 				}
 				{publication.frontmatter.centers && publication.frontmatter.centers.length > 0 &&
 						<>
-							<div class="bg-secondary rounded-lg p-4">Center</div>
+							<div class="chip chip-secondary caption">Center</div>
 							{publication.frontmatter.centers.map((c) => (
-									<div class="bg-primary text-secondary rounded-lg px-4 py-1">{c.center.short_label}</div>
+									<div class="hip chip-secondary caption">{c.center.short_label}</div>
 							))}
 						</>
 				}
 				{publication.frontmatter.dccs && publication.frontmatter.dccs.map(dcc => dccs[dcc]).map((dcc) =>
-					dcc && <div class="bg-primary text-secondary rounded-lg px-4 py-1">{dcc.frontmatter.short_label}</div>
+					dcc && <div class="chip chip-secondary caption">{dcc.frontmatter.short_label}</div>
 				)}
 				{publication.frontmatter.r03s && publication.frontmatter.r03s.length > 0 && (
 						publication.frontmatter.r03s.map((r03, index) => (
-								<div class="bg-primary text-secondary rounded-lg px-4 py-1">R03</div>
+								<div class="chip chip-secondary caption">R03</div>
 						))
 				)}
 
@@ -62,7 +62,7 @@ const toCamelCase = (str: String) => {
 			<div class="flex flex-row flex-wrap gap-1 max-w-full mt-2 items-center justify-content-start">
 				{publication.frontmatter.keywords && (
 						JSON.parse(publication.frontmatter.keywords).map((keyword, idx) => (
-								<div class="bg-secondary rounded-lg px-4">{toCamelCase(keyword)}</div>
+								<div class="chip chip-main caption-sm">{toCamelCase(keyword)}</div>
 						))
 					)}
 			</div>

@@ -1,7 +1,7 @@
 ---
 active: true
 grant_num: OT2OD036440
-homepage: https://hugeamp.org/research.html?pageid=kc_landing
+homepage: https://cfdeknowledge.org/r/kc_landing
 icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/cfde_kc_logo.svg
 label: The Knowledge Center
 layout: '@/layouts/Center.astro'

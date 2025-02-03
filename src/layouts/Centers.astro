@@ -10,13 +10,20 @@ const centers = Object.values(import.meta.glob('@/pages/centers/*.md', { eager: 
 		{centers.map(center =>
 			<div class="flex flex-col justify-start items-stretch gap-2 p-8 shadow-md rounded-md">
 				<div class="flex flex-row gap-8 items-center">
-					<div class="flex w-24 h-24 justify-center items-center"><img src={center.frontmatter.icon} class="max-w-24 max-h-24" /></div>
-					<span class="hanken-grotesk-500 text-xl text-primary">{center.frontmatter.short_label}</span>
+					<div class="flex w-24 h-24 justify-center items-center">
+						<img src={center.frontmatter.icon} class="max-w-24 max-h-24" />
+					</div>
+					<span class="hanken-grotesk-500 text-xl text-secondary-main">{center.frontmatter.label} ({center.frontmatter.short_label})</span>
 				</div>
-				<p class="overflow-ellipsis text-primary">{center.rawContent()}</p>
+				<div class="h-16 justify-center">
+					<p class="caption my-1 ">{center.frontmatter.short_description}</p>
+				</div>
+				<div class="h-40">
+					<p class="overflow-ellipsis text-secondary-main my-1 body2">{center.rawContent()}</p>
+				</div>
 				<div class="flex flex-row gap-8">
-					<a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={center.url}>Expand</a>
-					<a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={center.frontmatter.homepage} target="_blank">Go to DCC portal</a>
+					<a class="body-2 text-secondary-main hover:bg-gray-100 transition p-4" href={center.url}>Expand</a>
+					<a class="body-2 text-secondary-main hover:bg-gray-100 transition p-4" href={center.frontmatter.homepage} target="_blank">Go to DCC portal</a>
 				</div>
 			</div>
 		)}

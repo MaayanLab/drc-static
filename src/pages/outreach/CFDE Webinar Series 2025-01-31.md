@@ -11,7 +11,8 @@ short_description: The virtual CFDE workshop 'A Human Geneticists' Guide to the 
   Fund Data Ecosystem' will feature the NIH perspective of the CFDE, gene set to human
   traits scientific presentation, introduction to CFDE centers, and NIH funding opportunities.
 start_date: '2025-01-31T10:00:00-05:00'
-tags: '["webinar"]'
+tags: 
+- webinar
 title: CFDE Webinar Series
 ---
 This CFDE workshop will feature the NIH perspective of the CFDE, gene set to human traits scientific presentation, introduction to CFDE centers, and  NIH funding opportunities.

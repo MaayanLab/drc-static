@@ -16,7 +16,8 @@ short_description: "The Undergraduate Student Internship Program provides the op
   \ and training from\_NIH Human Biomolecular Atlas Program (HuBMAP) labs over the\
   \ summer."
 start_date: '2024-05-20T00:00:00-04:00'
-tags: '["internship"]'
+tags: 
+- internship
 title: 2024 HuBMAP Undergraduate Student Internship Program
 ---
 Applications will be accepted from November 27, 2023 until February 1, 2024.<br /><br />Internship experiences can be computational or experimental. The lab descriptions below identify which experiences will be computational and which will be experimental. <br /><br />Applicants can indicate their preference for computational or experimental internships on the application.<br /> <br /> Questions? Email us at: internshipapply@hubmapconsortium.org

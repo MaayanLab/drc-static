@@ -11,7 +11,8 @@ short_description: The CFDE will be showcased at the 2025 American Society of Hu
   Genetics Annual (ASHG) meeting. An ancillary session and a CFDE booth are planned.
   The meeting will be held in Boston, MA.
 start_date: '2025-10-14T12:00:00-05:00'
-tags: '["conference"]'
+tags: 
+- conference
 title: CFDE at the American Society of Human Genetics Annual Meeting
 ---
 The CFDE will be showcased at the 2025 American Society of Human Genetics Annual (ASHG) meeting. An ancillary session and a CFDE booth are planned. The meeting will be held in Boston, MA.

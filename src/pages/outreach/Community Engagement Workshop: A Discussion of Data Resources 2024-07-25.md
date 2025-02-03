@@ -12,7 +12,8 @@ short_description: "Join the NIH Common Fund\u2019s collaborative discussion at 
   \ culturally relevant data can shape future outreach, training, and support the\
   \ biomedical and behavioral research community."
 start_date: '2024-07-24T00:00:00-04:00'
-tags: '["workshop"]'
+tags: 
+- workshop
 title: 'Community Engagement Workshop: A Discussion of Data Resources'
 ---
 Join the NIH Common Fund’s collaborative discussion at the Community Engagement Workshop! Learn how data accessibility, inclusivity, and culturally relevant data can shape future outreach, training, and support the biomedical and behavioral research community. 

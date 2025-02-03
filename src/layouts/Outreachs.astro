@@ -1,36 +1,99 @@
 ---
-import '@/styles/base.css'
-import Layout from '@/components/Layout.astro'
-const outreach = Object.values(import.meta.glob('@/pages/outreach/*.md', { eager: true })).filter(outreach => outreach.frontmatter.layout === '@/layouts/Outreach.astro')
-const dccs = Object.fromEntries(Object.values(import.meta.glob('@/pages/dccs/*.md', { eager: true })).filter(dcc => dcc.frontmatter.layout === '@/layouts/DCC.astro').map(dcc => [dcc.frontmatter.short_label, dcc]))
+import "@/styles/base.css";
+import Layout from "@/components/Layout.astro";
+const outreach = Object.values(
+  import.meta.glob("@/pages/outreach/*.md", { eager: true }),
+).filter(
+  (outreach) => outreach.frontmatter.layout === "@/layouts/Outreach.astro",
+);
+const dccs = Object.fromEntries(
+  Object.values(import.meta.glob("@/pages/dccs/*.md", { eager: true }))
+    .filter((dcc) => dcc.frontmatter.layout === "@/layouts/DCC.astro")
+    .map((dcc) => [dcc.frontmatter.short_label, dcc]),
+);
+
+const parseDate = (dateStr: string | null): Date | null => {
+  if (!dateStr) return null;
+  return new Date(dateStr);
+};
+
+const isActive = (event: any): boolean => {
+  const now = new Date();
+  const appEnd = parseDate(event.frontmatter.application_end);
+  const appStart = parseDate(event.frontmatter.application_start);
+  const endDate = parseDate(event.frontmatter.end_date);
+  const startDate = parseDate(event.frontmatter.start_date);
+
+  return (
+    (appEnd && appEnd >= now) ||
+    (appStart && !appEnd && appStart >= now) ||
+    (endDate && !appEnd && endDate >= now) ||
+    (!endDate && startDate && startDate >= now)
+  );
+};
 ---
 
 <Layout>
-	<slot/>
-	<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-		{outreach.map(event =>
-			<div class="flex flex-col justify-start items-stretch gap-2 p-8 shadow-md rounded-md">
-        <div class="flex w-24 h-24 justify-center items-center"><img src={event.frontmatter.image} class="max-w-24 max-h-24" /></div>
-        <h3>{event.frontmatter.title}</h3>
-				<div class="overflow-ellipsis text-primary">
-          <event.default />
-        </div>
-        {event.frontmatter.dcc && event.frontmatter.dcc.length > 0 &&
-          <div class="flex flex-row flex-wrap items-center">
-            <span class="font-bold text-primary">Hosted by:</span>
-            {event.frontmatter.dcc.map(dcc => dccs[dcc]).map(dcc =>
-              <a class="flex justify-center items-center p-2 hover:bg-gray-100" href={dcc.url}>
-                <div class="w-16 h-16 flex justify-center items-center">
-                  <img class="max-w-16 max-h-16" src={dcc.frontmatter.icon} alt={dcc.frontmatter.short_label} />
-                </div>
+  <slot />
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 ">
+    { outreach.filter(event => event.frontmatter.tags && !event.frontmatter.tags.includes('none')).map((event) => (
+
+        <div class="flex flex-col justify-start items-stretch p-6 shadow-md rounded-md">
+          <div class="flex w-90% h-20% justify-center items-center">
+            <img src={event.frontmatter.image} class="max-h-48" />
+          </div>
+          <div class="">
+          {event.frontmatter.tags.map((tag) => (
+            <span class="chip chip-main caption-sm uppercase mr-1 px-8">{tag}</span>
+          ))}
+          </div>
+          <h5>{event.frontmatter.title}</h5>
+          <div class="overflow-ellipsis text-secondary-main">
+            <event.default />
+          </div>
+          {event.frontmatter.dcc && event.frontmatter.dcc.length > 0 && (
+            <div class="flex flex-row flex-wrap items-center">
+              <span class="font-bold text-secondary-main">Hosted by:</span>
+              {event.frontmatter.dcc
+                .map((dcc) => dccs[dcc])
+                .map((dcc) => (
+                  <a
+                    class="flex justify-center items-center p-2 hover:bg-gray-100"
+                    href={dcc.url}
+                  >
+                    <div class="w-16 h-16 flex justify-center items-center">
+                      <img
+                        class="max-w-16 max-h-16"
+                        src={dcc.frontmatter.icon}
+                        alt={dcc.frontmatter.short_label}
+                      />
+                    </div>
+                  </a>
+                ))}
+            </div>
+          )}
+          <div class="flex flex-row justify-between h-10%">
+            <div>
+              <a
+                class=" text-secondary-main hover:bg-gray-100 transition"
+              >
+                Add to Calendar
+              </a>
+            </div>
+            <div>
+              {event.frontmatter.link && (
+              <a
+                class="hanken-grotesk-500 text-secondary-main hover:bg-gray-100 transition  "
+                href={event.frontmatter.link}
+                target="_blank"
+              >
+                Event Details ->
               </a>
             )}
+            </div>
           </div>
-        }
-				<div class="flex flex-row gap-8">
-					{event.frontmatter.link && <a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={event.frontmatter.link} target="_blank">Visit Page</a>}
-				</div>
-			</div>
-		)}
-	</div>
+        </div>
+      ))
+    }
+  </div>
 </Layout>

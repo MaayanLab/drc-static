@@ -11,7 +11,8 @@ short_description: The CFDE will be showcased at the Bio-IT World 2025. The Bio-
   FAIR Data Hackathon will be facilitated by CFDE members led by the CFDE Training
   Center (TC) to promote the utilization and integration of CFDE tools and datasets.
 start_date: '2025-04-02T12:00:00-05:00'
-tags: '["conference"]'
+tags: 
+- conference
 title: CFDE at Bio-IT World Boston 2025
 ---
 The CFDE will be showcased at the Bio-IT World 2025. The Bio-IT FAIR Data Hackathon will be facilitated by CFDE members led by the CFDE Training Center (TC) to promote the utilization and integration of CFDE tools and datasets.
