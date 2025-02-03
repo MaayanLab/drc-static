@@ -1,0 +1,205 @@
+---
+import '@/styles/base.css'
+import Layout from '@/components/Layout.astro'
+const documentations = Object.values(import.meta.glob('@/pages/documentation/*.md', { eager: true }))
+  .filter(documentation => documentation.frontmatter.layout === '@/layouts/Documentation.astro')
+  .sort((a, b) => (a.frontmatter.title || '').localeCompare(b.frontmatter.title || ''))
+
+// Define descriptions object
+const descriptions = {
+  'SubmissionSystem': {
+    content: `The CFDE Workbench Data Resource Portal allows users to download 
+                DCC datasets, files, and interoperability assets via 
+                the <a href="/data/matrix" target="_blank" rel="noopener" color="#3470e5">Data Matrix</a>. 
+                Representatives from each DCC are encouraged to contribute assets 
+                from their CF programs by creating an account for submitting and 
+                approving uploads to the CFDE Workbench. Currently, the submission 
+                system accepts C2M2 metadata packages, entity matrix transpose (XMT) 
+                files, knowledge graph assertions, attribute tables, SmartAPI and 
+                OpenAPI specifications, extract-transform-load (ETL) scripts, 
+                entity pages, PWB metanodes, and chatbot specifications.
+                <br /><br />
+                Learn more about submitting to the Data Resource Portal in the <a 
+                href="https://data.cfde.cloud/submit" rel="noopener" color="#3470e5">Contribution Guide</a>.`
+  },
+  'C2M2': {
+    content: ` The Crosscut Metadata Model (C2M2) was designed to standardize 
+                metadata annotations across Common Fund DCCs by the original CFDE 
+                Coordination Center. C2M2 datapackage files are usually a zipfile 
+                containing a set of TSV files already standardized to a set of known 
+                ontologies, along with a single JSON schema. 
+                <br /><br />
+                Learn more about generating a C2M2 datapackage <a 
+                href="./C2M2" rel="noopener" color="#3470e5">here</a>.`
+  },
+  'C2M2Table': {
+    content: ` Preview of  <a
+                href="./C2M2Table" rel="noopener" color="#3470e5">imported C2M2 table</a>.`
+  },
+  'OpenAPI': {
+    content: `  The OpenAPI specification allows for the standardization of 
+                application programming interfaces (APIs), and facilitates 
+                their interoperability. 
+                <br /><br />
+                The SmartAPI project builds on top of the OpenAPI specifications 
+                to maximize the findability, accessibility, interoperability, 
+                and reusability (FAIRness) of web-based tools, especially those 
+                within the biomedical sphere. Through richer metadata descriptions, 
+                SmartAPI enables users to search and use a connected network of tools. 
+                <br /><br />
+                Learn more about generating an OpenAPI or SmartAPI specification <a
+                href="./OpenAPI" rel="noopener" color="#3470e5">here</a>.`
+  },
+  'RNA-seq': {
+    content: `   The CFDE RNA-seq Partnership aims to harmonize diverse RNA-seq 
+                datasets across the CFDE to improve their interoperability and 
+                reusability for the broader scientific research community. To this 
+                end, the partnership is developing common pipelines for both bulk 
+                and single cell RNA-seq data analysis, with the end goal of building 
+                a large, readily accessible, and harmonized resource of RNA-seq 
+                datasets and processing tools from various DCCs and CFDE projects. 
+                <br /><br />
+                More information about the standardized bulk and single cell RNA-seq 
+                pipelines will be available soon.`
+  },
+  'FAIRshake': {
+    content: `  The FAIRshake toolkit enables manual and automated assessments of 
+                the findability, accessibility, interoperability, and reusability 
+                (FAIRness) of digital resources. FAIRshake provides community-driven 
+                metrics and rubrics for evaluation, and visualizes the results with 
+                a characteristic embeddable insignia. The primary goal of FAIRshake 
+                is to enable researchers and developers to objectively measure and 
+                improve the FAIRness of their tools. 
+                <br /><br />
+                Learn more about performing FAIR assessments with FAIRshake <a
+                href="./FAIRshake" rel="noopener" color="#3470e5">here</a>. `
+  },
+  'KGAssertions': {
+    content: ` The CFDE Data Distillery Partnership aims to integrate data assertions 
+                across DCCs into a functional knowledge graph for knowledge query 
+                and discovery. The partnership has collected "distilled" data relationships 
+                from each DCC to be unified in a knowledge graph model with controlled
+                ontology and vocabulary terms for exploring pre-defined, biologically 
+                relevant use cases. 
+                <br /><br />
+                Learn more about generating Data Distillery Knowledge Graph Assertions <a
+                href="./KGAssertions" rel="noopener" color="#3470e5">here</a>.`
+  },
+  'PWBMetanodes': {
+    content: `  The Playbook Workflow Builder (PWB) is a web-based 
+                knowledge resolution platform being developed by the CFDE Workflow 
+                Playbook Partnership and consisting of a growing network of datasets, 
+                semantically annotated API endpoints, and visualization tools 
+                from across the CFDE. Users can construct workflows from the individual building blocks, 
+                termed "metanodes", with little effort or technical expertise 
+                required. 
+                <br /><br />
+                Learn more about building PWB metanodes <a
+                href="./PWBMetanodes" rel="noopener" color="#3470e5">here</a>.`
+  },
+  'WebSpecs': {
+    content: `  The CFDE Workbench is built using Next.js, Material UI, and Tailwind CSS. Design Specifications for this site's user interface can be found <a
+                href="./WebSpecs" rel="noopener" color="#3470e5">here</a>.`
+  }
+}
+---
+
+<Layout>
+    <!-- Main content from the index.md -->
+    <slot />
+    
+    <!-- Documentation items -->
+    <div class="mt-8 space-y-4">
+      {documentations.map((doc) => (
+		<div class="collapse-container bg-primary-light  text-secondary-main rounded-sm overflow-hidden">
+  <button
+    class="w-full text-left px-6 py-4 flex items-center gap-2 transition-colors collapse-trigger"
+    aria-expanded="false"
+    aria-controls={`content-${doc.frontmatter.label}`}
+  >
+            <svg
+              class="w-4 h-4 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+            <span class="font-medium">{doc.frontmatter.title}</span>
+          </button>
+          
+          <div
+            id={`content-${doc.frontmatter.label}`}
+            class="collapse-content hidden px-6 py-4 border-t bg-white text-secondary-main"
+          >
+            <div class="text-gray-desc" set:html={descriptions[doc.frontmatter.label]?.content || null} />
+           
+          </div>
+        </div>
+      ))}
+    </div>
+
+</Layout>
+
+
+
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+  const triggers = document.querySelectorAll('.collapse-trigger');
+  
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const contentId = trigger.getAttribute('aria-controls');
+      const content = document.getElementById(contentId);
+      const icon = trigger.querySelector('svg');
+      const container = trigger.closest('.collapse-container');
+      
+      const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+      trigger.setAttribute('aria-expanded', !isExpanded);
+      
+      if (content) {
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+        
+        // Toggle both background and text colors
+        if (container) {
+          if (isExpanded) {
+            // Switching to closed state
+            container.classList.remove('bg-secondary-main','text-white' );
+            container.classList.add( 'bg-primary-light',  'text-secondary-main');
+          } else {
+            // Switching to open state
+            container.classList.remove('bg-primary-light',  'text-secondary-main');
+            container.classList.add('bg-secondary-main', 'text-white');
+          }
+        }
+      }
+    });
+  });
+});
+
+  </script>
+
+<style>
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .collapse-content {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .collapse-content:not(.hidden) {
+    display: block;
+  }
+</style>

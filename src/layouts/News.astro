@@ -1,0 +1,12 @@
+---
+import '@/styles/base.css'
+import Layout from '@/components/Layout.astro'
+const { frontmatter } = Astro.props
+---
+
+<Layout>
+	
+	<h1>{frontmatter.title}</h1>
+	<p>{frontmatter.date}</p>
+	
+</Layout>

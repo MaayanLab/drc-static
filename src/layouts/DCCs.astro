@@ -11,12 +11,12 @@ const dccs = Object.values(import.meta.glob('@/pages/dccs/*.md', { eager: true }
 			<div class="flex flex-col justify-start items-stretch gap-2 p-8 shadow-md rounded-md">
 				<div class="flex flex-row gap-8 items-center">
 					<div class="flex w-24 h-24 justify-center items-center"><img src={dcc.frontmatter.icon} class="max-w-24 max-h-24" /></div>
-					<span class="hanken-grotesk-500 text-xl text-primary">{dcc.frontmatter.short_label}</span>
+					<span class="hanken-grotesk-500 text-xl text-secondary-main">{dcc.frontmatter.short_label}</span>
 				</div>
-				<p class="overflow-ellipsis text-primary">{dcc.rawContent()}</p>
+				<p class="overflow-ellipsis text-secondary-main">{dcc.rawContent()}</p>
 				<div class="flex flex-row gap-8">
-					<a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={dcc.url}>Expand</a>
-					<a class="hanken-grotesk-500 text-primary hover:bg-gray-100 transition p-4" href={dcc.frontmatter.homepage} target="_blank">Go to DCC portal</a>
+					<a class="hanken-grotesk-500 text-secondary-main hover:bg-gray-100 transition p-4" href={dcc.url}>Expand</a>
+					<a class="hanken-grotesk-500 text-secondary-main hover:bg-gray-100 transition p-4" href={dcc.frontmatter.homepage} target="_blank">Go to DCC portal</a>
 				</div>
 			</div>
 		)}
