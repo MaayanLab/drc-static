@@ -1,0 +1,36 @@
+---
+import { Markdown } from 'astro-remote';
+
+interface Props {
+  content: string;
+}
+
+const { content } = Astro.props;
+---
+
+<div class="markdown-content">
+  <Markdown content={content} />
+</div>
+
+<style>
+  .markdown-content {
+    @apply max-w-full overflow-x-auto p-4;
+  }
+  
+  .markdown-content :global(table) {
+    @apply min-w-full border-collapse my-4;
+  }
+
+  .markdown-content :global(th),
+  .markdown-content :global(td) {
+    @apply border border-gray-300 px-4 py-2 text-left;
+  }
+
+  .markdown-content :global(th) {
+    @apply bg-gray-100 font-semibold;
+  }
+
+  .markdown-content :global(tr:nth-child(even)) {
+    @apply bg-gray-50;
+  }
+</style>

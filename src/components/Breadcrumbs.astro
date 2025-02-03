@@ -1,0 +1,78 @@
+---
+// NavBreadcrumbs.astro
+const { pathname } = Astro.url;
+
+// Utility function to format path segments
+function formatPathSegment(segment: string, index: number) {
+  // Decode and basic formatting
+  let formatted = decodeURIComponent(segment).replace('_', ' ');
+  
+  // Replace drc-static with INFO
+  if (segment === 'drc-static') {
+    return 'INFO';
+  }
+
+  // Handle special cases
+  if (segment === 'processed') return 'Processed Data';
+  if (segment === 'entity') return 'Entity';
+  if (segment === 'form') return 'Data and Metadata Form';
+  if (segment === 'urlform') return 'Code Assets Form';
+  if (segment === 'uploaded') return 'Uploaded Assets';
+
+  return formatted;
+}
+
+// Process the path
+const pathSegments = pathname.split('/').filter(Boolean);
+const formattedSegments = pathSegments.map((segment, index) => {
+  let formatted = formatPathSegment(segment, index);
+  
+  // Special case handling
+  if (pathSegments[0] === 'data' && pathSegments[1] === 'processed') {
+    if (index === 2 && pathSegments[2] === 'entity') formatted = 'Entity';
+  }
+  if (pathSegments[0] === 'data' && pathSegments[1] === 'search') {
+    if (index === 3 && pathSegments[3] === 'entity') formatted = 'Entity';
+  }
+  if (pathSegments[0] === 'search') {
+    if (index === 2 && pathSegments[2] === 'entity') formatted = 'Entity';
+  }
+  
+  return {
+    segment: segment === 'drc-static' ? 'INFO' : segment, // Use INFO in the path
+    formatted: formatted.toUpperCase(),
+    path: '/' + pathSegments.slice(0, index + 1).join('/')
+  };
+});
+
+// Don't render if we're at the root
+if (pathSegments.length < 2) return null;
+---
+
+<nav aria-label="breadcrumb" class="flex items-center space-x-2 px-1 py-2">
+  {formattedSegments.map((item, index) => (
+    <>
+      {index > 0 && (
+        <span class="text-secondary-main font-medium mx-1">›</span>
+      )}
+      {index === formattedSegments.length - 1 ? (
+        <span class="font-hanken text-[14px] font-medium text-secondary-main cursor-default">
+          {item.formatted}
+        </span>
+      ) : (
+        <a
+          href={item.path}
+          class="font-hanken text-[14px] font-medium text-gray-600 hover:text-secondary-main transition-colors duration-200"
+        >
+          {item.formatted}
+        </a>
+      )}
+    </>
+  ))}
+</nav>
+
+<style>
+  nav {
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+</style>
