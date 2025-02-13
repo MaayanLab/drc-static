@@ -4,7 +4,7 @@ from datetime import date
 import boto3
 from botocore.exceptions import ClientError
 import pandas as pd
-
+import csv
 def upload_file(file_obj, bucket, object_name=None):
 	"""Upload a file to an S3 bucket
 
@@ -31,13 +31,15 @@ bucket = 'cfde-drc'
 
 now = str(date.today()).replace("-", "")
 
-def backup_file(df, suffix, include_index=True):
+def backup_file(df, suffix, include_index=True, quoting=True):
 	print("backing up on s3...")
 	s_buf = io.StringIO()
 	# df.to_csv(s_buf, header=True, sep="\t")
 	# print(s_buf.read())
 	if include_index:
 		df.to_csv(s_buf, header=True, sep="\t")
+	elif not quoting:
+		df.to_csv(s_buf, header=True, sep="\t", quoting=csv.QUOTE_NONE)
 	else:
 		df.to_csv(s_buf, header=True, sep="\t",  index=None)
 	object_name = "database/test/%s_%s.tsv"%(now, suffix)
