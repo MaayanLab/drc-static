@@ -1,6 +1,7 @@
 ---
 doi: https://doi.org/10.1093/bioadv/vbac013
 icon: /img/gdlpa.png
+id: 3569c3de-97e3-5822-a895-d6c7d28da983
 image: /img/gdlpa-screenshot.png
 label: GDLPA
 layout: '@/layouts/Tools.astro'

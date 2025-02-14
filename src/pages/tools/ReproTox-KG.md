@@ -1,7 +1,8 @@
 ---
 doi: https://doi.org/10.1038/s43856-023-00329-2
-featured: true
+featured: false
 icon: /img/reprotox-kg-logo.png
+id: 33ccfdb7-b5eb-5fca-9fb6-208b7b72099d
 image: /img/reprotox-kg-screenshot.png
 label: ReproTox-KG
 layout: '@/layouts/Tools.astro'

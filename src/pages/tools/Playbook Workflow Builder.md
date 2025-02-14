@@ -1,6 +1,7 @@
 ---
 featured: true
 icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
+id: 08cd40cc-f35f-547f-a8d7-524859559b0c
 image: /img/pwb-screenshot.png
 label: Playbook Workflow Builder
 layout: '@/layouts/Tools.astro'

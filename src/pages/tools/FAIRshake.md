@@ -1,6 +1,7 @@
 ---
 doi: https://doi.org/10.1016/j.cels.2019.09.011
 icon: /img/fairshake.png
+id: 4b13395c-45b7-5911-b255-527934471945
 image: /img/fairshake-screenshot.png
 label: FAIRshake
 layout: '@/layouts/Tools.astro'
