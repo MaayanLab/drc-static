@@ -1,6 +1,5 @@
 ---
 icon: /img/ubkg.png
-id: b08fa45b-a979-509a-a3a5-de9616bec4e1
 image: /img/ubkg-screenshot.png
 label: Data Distillery Knowledge Graph
 layout: '@/layouts/Tools.astro'

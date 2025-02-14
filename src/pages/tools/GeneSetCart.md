@@ -1,7 +1,6 @@
 ---
 featured: true
 icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/g2sg-logo.png
-id: 9da81ef3-069b-51a3-8def-753e1dcf3ef1
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/g2sg-screenshot.png
 label: GeneSetCart
 layout: '@/layouts/Tools.astro'

@@ -1,6 +1,5 @@
 ---
 featured: false
-id: dcb54e80-a288-54df-9283-be888901784f
 image: /img/rna-seq_pipeline.png
 label: Standard RNA-seq Processing Pipelines
 layout: '@/layouts/Tools.astro'
