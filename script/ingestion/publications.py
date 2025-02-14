@@ -49,25 +49,25 @@ for filename in glob('../../src/pages/publications/*.md'):
 			uid = str(uuid5(NAMESPACE_URL, title))
 			v = {c: yml[c] for c in publication_columns if c in yml}
 			publication_df.loc[uid] = v
-			if "dccs" in yml and type(yml["dccs"]) == str and yml["dccs"].strip() != '':
-				for dcc in yml["dccs"].split(";"):
+			if "dccs" in yml:
+				for dcc in yml["dccs"]:
 					dcc = dcc.strip()
 					dcc_id = dcc_mapper[dcc]
 					dcc_publication_df.loc[ind] = [uid, dcc_mapper[dcc]]
 					ind += 1
-			if "partnerships" in yml and type(yml["partnerships"]) == str and yml["partnerships"].strip() != '':
-				for partnership in yml["partnerships"].split(";"):
-					partnership = partnership.strip()
-					partnership_id = partnership_mapper[partnership]
-					partnership_publication_df.loc[pind] = [uid, partnership_mapper[partnership]]
-					pind += 1
+			if "partnerships" in yml:
+				partnership = yml["partnerships"]
+				partnership = partnership.strip()
+				partnership_id = partnership_mapper[partnership]
+				partnership_publication_df.loc[pind] = [uid, partnership_mapper[partnership]]
+				pind += 1
 			
-			if "r03" in yml and type(yml["r03"]) == str and yml["r03"].strip() != '':
-				for r03 in yml["r03"].split(";"):
-					r03 = r03.strip()
-					r03_id = r03_mapper[r03]
-					r03_publication_df.loc[rind] = [uid, r03_mapper[r03]]
-					rind += 1
+			if "r03" in yml:
+				r03 = yml["r03"]
+				r03 = r03.strip()
+				r03_id = r03_mapper[r03]
+				r03_publication_df.loc[rind] = [uid, r03_mapper[r03]]
+				rind += 1
 
 ## Update S3
 backup_file(publication_df, "publications", quoting=False)
