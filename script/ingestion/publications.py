@@ -72,7 +72,8 @@ for filename in glob('../../src/pages/publications/*.md'):
 ## Update S3
 backup_file(publication_df, "publications", quoting=False)
 backup_file(dcc_publication_df, "dcc_publications", False)
-backup_file(r03_publication_df, "r03_publications", "False")
+backup_file(partnership_publication_df, "partnership_publications", False)
+backup_file(r03_publication_df, "r03_publications", False)
 
 ## ingest
 
