@@ -22,7 +22,7 @@ outreach_df = pd.DataFrame("-", index=[], columns=outreach_columns)
 outreach_df.index.name = 'id'
 dcc_outreach_df = pd.DataFrame("-", index=[], columns=dcc_outreach_columns)
 ind = 0
-# outreach_df = outreach_df.fillna('')
+outreach_df = outreach_df.fillna('')
 
 for filename in glob('../../src/pages/outreach/*.md'):
 	with open(filename) as o:
@@ -61,7 +61,7 @@ for filename in glob('../../src/pages/webinars/*.md'):
 		m = markdown.split("---")
 		val = yaml.safe_load(m[1])
 		description = m[-1].strip()
-		if "title" in val:
+		if "agenda" in val:
 			title = 'CFDE Webinar Series'
 			start_date = val["start_date"]
 			end_date = val.get('end_date')
@@ -70,17 +70,16 @@ for filename in glob('../../src/pages/webinars/*.md'):
 			if uid not in outreach_df.index:
 				print(uid)
 			else:
-				if "agenda" in val:
-					if not type(val["agenda"]) == list:
-						print(val['agenda'])
-					outreach_df.at[uid,'agenda'] = json.dumps(val["agenda"])
+				if not type(val["agenda"]) == list:
+					print(val['agenda'])
+				outreach_df.at[uid,'agenda'] = json.dumps(val["agenda"])
 
 
 
-outreach_df['active'] = outreach_df['active'].astype(bool)
-outreach_df['featured'] = outreach_df['featured'].astype(bool)
-outreach_df['carousel'] = outreach_df['carousel'].astype(bool)
-outreach_df['cfde_specific'] = outreach_df['cfde_specific'].astype(bool)
+outreach_df['active'] = outreach_df['active'].fillna(0).astype(bool)
+outreach_df['featured'] = outreach_df['featured'].fillna(0).astype(bool)
+outreach_df['carousel'] = outreach_df['carousel'].fillna(0).astype(bool)
+outreach_df['cfde_specific'] = outreach_df['cfde_specific'].fillna(0).astype(bool)
 backup_file(outreach_df, "outreach", quoting=False)
 backup_file(dcc_outreach_df, "dcc_outreach", False)
 
@@ -100,7 +99,6 @@ cur.execute('''
 ''')
 
 o_buf = io.StringIO()
-outreach_df.to_csv('outreach.tsv', sep="\t", quoting=csv.QUOTE_NONE)
 outreach_df.to_csv(o_buf, header=True, quoting=csv.QUOTE_NONE, sep="\t")
 o_buf.seek(0)
 columns = next(o_buf).strip().split('\t')
