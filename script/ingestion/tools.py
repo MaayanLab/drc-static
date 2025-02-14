@@ -31,7 +31,7 @@ for filename in glob('../../src/pages/tools/*.md'):
 						doi = v.replace("https://doi.org/", "")
 						pub_id = publication_mapper[doi]
 						publication_df.at[pub_id, 'tool_id'] = uid
-				elif not k == "layout":
+				elif k not in ["layout", "id"]:
 					val[k] = v
 					
 			tools[uid] = val
