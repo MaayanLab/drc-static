@@ -7,7 +7,6 @@ from s3_update import backup_file
 from ingest_common import connection
 import io
 import csv
-dccs = pd.read_csv('https://cfde-drc.s3.amazonaws.com/database/files/current_dccs.tsv', sep="\t", index_col=0, header=0)
 
 dccs = pd.read_csv('https://cfde-drc.s3.amazonaws.com/database/files/current_dccs.tsv', sep="\t", index_col=0, header=0)
 # map dcc names to their respective ids
