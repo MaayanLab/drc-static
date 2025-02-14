@@ -1,6 +1,5 @@
 ---
 active: true
-agenda: estimateCommonDisp
 carousel: false
 cfde_specific: true
 dcc:

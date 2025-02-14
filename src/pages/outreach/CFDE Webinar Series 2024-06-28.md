@@ -1,13 +1,5 @@
 ---
 active: true
-agenda: '[  {    "agenda": "",    "subtitle": "",    "summary": "",    "presenter":
-  "Jeremy Yang, Ph.D Research Associate Professor",    "affiliation": "UNM SoM, DoIM,
-  TI Division"  },  {    "agenda": "",    "subtitle": "",    "summary": "",    "presenter":
-  "Anna Waller, Ph.D Scientist & Project Manager",    "affiliation": "UNM SoM, Dept
-  of Pathology"  },  {    "agenda": "",    "subtitle": "",    "summary": "",    "presenter":
-  "Jayme Holmes, Sr Engineer & Lead Developer",    "affiliation": "UNM SoM, DoIM,
-  TI Division"  },  {    "agenda": "",    "subtitle": "",    "summary": "",    "presenter":
-  "Timothy heils, Sr Engineer & Project Manager",    "affiliation": "NIH NCATS"  }]'
 carousel: true
 cfde_specific: true
 dcc:
