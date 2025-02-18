@@ -1,6 +1,6 @@
 ---
 active: true
-carousel: true
+carousel: false
 cfde_specific: true
 end_date: '2025-12-31T00:00:00-04:00'
 featured: false
