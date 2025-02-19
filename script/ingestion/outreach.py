@@ -15,7 +15,7 @@ dcc_mapper = {}
 for k,v in dccs.iterrows():
 	dcc_mapper[v["short_label"]] = k
 
-outreach_columns = ["title", "short_description", "description", "tags", "agenda", "featured", "active", "start_date", "end_date", "application_start", "application_end", "link", "image", "carousel", "cfde_specific", "flyer"]
+outreach_columns = ["title", "short_description", "description", "tags", "agenda", "featured", "active", "start_date", "end_date", "application_start", "application_end", "link", "image", "carousel", "carousel_description", "cfde_specific", "flyer"]
 dcc_outreach_columns = ["outreach_id", "dcc_id"]
 
 outreach_df = pd.DataFrame("-", index=[], columns=outreach_columns)
