@@ -1,9 +1,9 @@
 ---
 active: true
 carousel: true
-carousel_description: Join us for an engaging webinar that presents ARCHS4, a resource
-  that has over 2 million uniformly aligned RNA-seq samples from thousands of GEO
-  studies
+carousel_description: Join us for an engaging webinar about **ARCHS4**, a
+  resource that has over 2 million uniformly aligned RNA-seq samples from thousands
+  of GEO studies
 cfde_specific: true
 dcc:
 - LINCS
