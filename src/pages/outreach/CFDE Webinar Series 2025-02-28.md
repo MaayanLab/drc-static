@@ -1,6 +1,8 @@
 ---
 active: true
 carousel: true
+carousel_description: Join us for an engaging webinar about the 4DN Data Coordination
+  Center presented by Dr. Peter Park from Harvard Medical School
 cfde_specific: true
 end_date: '2025-02-28T14:00:00-05:00'
 featured: true
