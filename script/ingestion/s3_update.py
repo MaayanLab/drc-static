@@ -42,7 +42,7 @@ def backup_file(df, suffix, include_index=True, quoting=True):
 		df.to_csv(s_buf, header=True, sep="\t", quoting=csv.QUOTE_NONE)
 	else:
 		df.to_csv(s_buf, header=True, sep="\t",  index=None)
-	object_name = "database/test/%s_%s.tsv"%(now, suffix)
+	object_name = "database/files/%s_%s.tsv"%(now, suffix)
 	upload_file(s_buf.getvalue(), bucket, object_name)
-	object_name = "database/test/current_%s.tsv"%(suffix)
+	object_name = "database/files/current_%s.tsv"%(suffix)
 	upload_file(s_buf.getvalue(), bucket, object_name)

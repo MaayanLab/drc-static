@@ -13,6 +13,13 @@ dccs = pd.read_csv('https://cfde-drc.s3.amazonaws.com/database/files/current_dcc
 dcc_mapper = {}
 for k,v in dccs.iterrows():
 	dcc_mapper[v["short_label"]] = k
+	
+
+centers = pd.read_csv('https://cfde-drc.s3.amazonaws.com/database/files/current_centers.tsv', sep="\t", index_col=0, header=0)
+# map center names to their respective ids
+center_mapper = {}
+for k,v in centers.iterrows():
+	center_mapper[v["short_label"]] = k
 
 partnerships = pd.read_csv('https://cfde-drc.s3.amazonaws.com/database/files/current_partnerships.tsv', sep="\t", index_col=0)
 partnership_mapper = {}
@@ -26,12 +33,14 @@ for k,v in r03.iterrows():
 
 publication_columns = ["title", "journal", "authors", "year", "page", "volume", "issue", "pmid", "pmcid", "doi", "landmark", "tool_id", "carousel", "carousel_title", "carousel_link", "carousel_description", "image", "featured", "keywords" ]
 dcc_publication_columns = ["publication_id", "dcc_id"]
+center_publication_columns = ["publication_id", "center_id"]
 partnership_publication_columns = ["publication_id", "partnership_id"]
 r03_publication_columns = ["publication_id", "r03_id"]
 
 publication_df = pd.DataFrame("-", index=[], columns=publication_columns)
 publication_df.index.name = "id"
 dcc_publication_df = pd.DataFrame("-", index=[], columns=dcc_publication_columns)
+center_publication_df = pd.DataFrame("-", index=[], columns=center_publication_columns)
 partnership_publication_df = pd.DataFrame("-", index=[], columns=partnership_publication_columns)
 r03_publication_df = pd.DataFrame("-", index=[], columns=r03_publication_columns)
 ind = 0
@@ -54,6 +63,13 @@ for filename in glob('../../src/pages/publications/*.md'):
 					dcc_id = dcc_mapper[dcc]
 					dcc_publication_df.loc[ind] = [uid, dcc_mapper[dcc]]
 					ind += 1
+			if "centers" in yml:
+				for center in yml["centers"]:
+					center = center.strip()
+					center_id = center_mapper[center]
+					center_publication_df.loc[ind] = [uid, center_mapper[center]]
+					ind += 1
+			
 			if "partnerships" in yml:
 				partnership = yml["partnerships"]
 				partnership = partnership.strip()
@@ -71,6 +87,7 @@ for filename in glob('../../src/pages/publications/*.md'):
 ## Update S3
 backup_file(publication_df, "publications", quoting=False)
 backup_file(dcc_publication_df, "dcc_publications", False)
+backup_file(center_publication_df, "center_publications", False)
 backup_file(partnership_publication_df, "partnership_publications", False)
 backup_file(r03_publication_df, "r03_publications", False)
 
@@ -150,6 +167,30 @@ cur.execute('''
     ;
   ''')
 cur.execute('drop table dcc_publication_tmp;')
+
+cur.execute('''
+  create table center_publication_tmp
+  as table center_publications
+  with no data;
+''')
+center_buf = io.StringIO()
+center_publication_df.to_csv(center_buf, header=True, sep="\t", index=None)
+center_buf.seek(0)
+columns = next(center_buf).strip().split('\t')
+cur.copy_from(center_buf, 'center_publication_tmp',
+	columns=center_publication_columns,
+	null='',
+	sep='\t',
+)
+cur.execute('''
+    insert into center_publications (publication_id, center_id)
+      select publication_id, center_id
+      from center_publication_tmp
+      on conflict 
+        do nothing
+    ;
+  ''')
+cur.execute('drop table center_publication_tmp;')
 
 
 cur = connection.cursor()
