@@ -1,13 +1,5 @@
 ---
 active: true
-grant_num: OT2OD037936
-label: The Cloud Workspace Implementation Center
-layout: '@/layouts/Center.astro'
-short_description: The CFDE Cloud Workspace
-short_label: CWIC
-
-
-active: true
 label: The Cloud Workspace Implementation Center
 short_label: CWIC
 project_title: The CFDE Cloud Workspace
@@ -22,6 +14,10 @@ press_release:
 - title: TACC Receives NIH Award to Develop Cloud Workspace Implementation Center
   url: https://www.hpcwire.com/off-the-wire/tacc-receives-nih-award-to-develop-cloud-workspace-implementation-center/
 layout: '@/layouts/Center.astro'
-short_description: The CFDE Cloud Workspace
+short_description: The CFDE Cloud Workspace enables researchers to analyze, integrate, and share data with powerful tools, fostering collaboration and accelerating discoveries through free computational resources and training.
 ---
-The Cloud Workspace of the Common Fund Data Ecosystem (CFDE) will make it easy for a wide range of researchers to analyze data and work together. Our primary goal is to create a user-friendly environment where researchers can import their data, analyze their data alongside other Common Fund datasets, and use a variety of analysis tools and workflows. Our Cloud Workspace Implementation Center (CWIC) leverages the existing partnerships between the Texas Advanced Computing Center’s (TACC) unparalleled public high-performance resources, Galaxy’s open-source online interface for analyzing data and authoring workflows, and CloudBank’s tools that simplify cloud resource access and billing. By leveraging our existing resources and skills, this CWIC can streamline implementation of the Cloud Workspace. This Cloud Workspace will provide users with access to Common Fund datasets, allow users to import data from other sources, and allow for data integration and analysis. Users will have access to a wide range of tools, workflows, and pipelines developed by the CFDE, by Galaxy, and by other partners. In addition, users will have the flexibility to use custom or third-party tools within the workspace. The CWIC will cater to the needs of both novice and expert users by offering outreach, training, and support designed to meet the diverse needs of its users. This effort will include user manuals, online tutorials, and tools to help users manage computing costs across public and commercial computing resources. Current scientific discoveries can be expensive, relying on large datasets and intensive computational processing power. Notably, this Cloud Workspace will enable science across a broad set of researchers, providing access to large amounts of storage and compute at no cost to new users and trainees. By promoting data sharing, collaboration, and ease of access, the CWIC will speed up biomedical research and address high-priority challenges for our nation. The CFDE Cloud Workspace represents a significant step towards realizing the vision of broadening the community of scientists with the power to tackle complex research questions and drive innovation.
+The CFDE Cloud Workspace is designed to provide researchers with an accessible and collaborative environment for data analysis. It allows users to import and integrate data with Common Fund datasets while utilizing a wide range of analysis tools, workflows, and pipelines. The Cloud Workspace Implementation Center (CWIC) streamlines deployment by leveraging key partnerships: TACC’s high-performance computing resources, Galaxy’s open-source interface for data analysis, and CloudBank’s tools for simplified cloud access and billing. 
+
+This workspace supports both novice and expert users by offering training, outreach, and cost-management tools to optimize resource usage. Users will have access to a variety of tools developed by CFDE, Galaxy, and other partners, with the flexibility to incorporate custom or third-party tools. By providing free storage and compute resources, the Cloud Workspace lowers barriers to entry, enabling researchers to work with large datasets and complex analyses.
+
+By fostering data sharing, collaboration, and ease of access, CWIC accelerates biomedical research and supports a broader scientific community in tackling high-priority challenges. This initiative represents a significant step toward expanding access to advanced computational resources and empowering researchers to drive innovation in the field.
