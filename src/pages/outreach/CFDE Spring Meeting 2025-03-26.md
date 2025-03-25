@@ -4,10 +4,10 @@ carousel: true
 cfde_specific: true
 end_date: '2025-03-26T00:00:00-04:00'
 featured: false
-image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/Mar2024f2f.png
+image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/cfdef2f.png
 layout: '@/layouts/Outreach.astro'
 link: https://cfdeconnect.org/spring25/
-short_description: Learn more about the **CFDE F2F All Hands Meeting** on March 25-26, 2025 in Bethesda, MD.
+short_description: Learn more about the **CFDE F2F All-Hands Meeting** on March 25-26, 2025 in Bethesda, MD.
 start_date: '2025-03-25T00:00:00-04:00'
 tags: '["face to face meeting"]'
 title: CFDE Spring Meeting
