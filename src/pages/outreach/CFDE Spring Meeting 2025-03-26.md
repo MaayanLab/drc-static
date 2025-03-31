@@ -2,7 +2,7 @@
 active: true
 carousel: true
 cfde_specific: true
-end_date: '2025-03-26T00:00:00-04:00'
+end_date: '2025-03-26T16:00:00-04:00'
 featured: false
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/cfdef2f.png
 layout: '@/layouts/Outreach.astro'
