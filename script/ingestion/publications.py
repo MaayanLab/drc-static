@@ -94,6 +94,7 @@ backup_file(r03_publication_df, "r03_publications", False)
 ## ingest
 
 cur = connection.cursor()
+
 cur.execute('''
   DELETE FROM dcc_publications;
 ''')
@@ -104,6 +105,10 @@ cur.execute('''
 
 cur.execute('''
   DELETE FROM r03_publications;
+''')
+
+cur.execute('''
+	DELETE FROM center_publications;
 ''')
 
 cur.execute('''
