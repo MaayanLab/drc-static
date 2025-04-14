@@ -8,6 +8,7 @@ short_description: GeneSetCart is interactive web-based application that enables
   to fetch gene sets, augment, perform set operations, visualize, and analyze gene
   sets in a single session.
 tutorial: '[ "https://www.youtube.com/watch?v=yp0pfpJt1_M" ]'
-url: https://g2sg.cfde.cloud/
+url: https://genesetcart.cfde.cloud/
+doi: https://doi.org/10.1093/gigascience/giaf025
 ---
 GeneSetCart is an interactive web-based application that enables users to fetch gene sets from various Common Fund programs data sources, augment these sets with gene-gene co-expression correlations or protein-protein interactions, perform set operations such as union, consensus, and intersection on multiple sets, visualize and analyze these gene sets in a single session. 
