@@ -15,13 +15,24 @@ dcc_mapper = {}
 for k,v in dccs.iterrows():
 	dcc_mapper[v["short_label"]] = k
 
-outreach_columns = ["title", "short_description", "description", "tags", "agenda", "featured", "active", "start_date", "end_date", "application_start", "application_end", "link", "image", "carousel", "carousel_description", "cfde_specific", "flyer"]
+centers = pd.read_csv('https://cfde-drc.s3.amazonaws.com/database/files/current_centers.tsv', sep="\t", index_col=0, header=0)
+# map dcc names to their respective ids
+center_mapper = {}
+for k,v in centers.iterrows():
+	center_mapper[v["short_label"]] = k
+
+
+outreach_columns = ["title", "short_description", "description", "tags", "agenda", "featured", "active", "start_date", "end_date", "application_start", "application_end", "link", "image", "carousel", "carousel_description", "cfde_specific", "flyer", "recurring", "ical", "schedule"]
 dcc_outreach_columns = ["outreach_id", "dcc_id"]
+center_outreach_columns = ["outreach_id", "center_id"]
 
 outreach_df = pd.DataFrame("-", index=[], columns=outreach_columns)
 outreach_df.index.name = 'id'
 dcc_outreach_df = pd.DataFrame("-", index=[], columns=dcc_outreach_columns)
 ind = 0
+
+center_outreach_df = pd.DataFrame("-", index=[], columns=center_outreach_columns)
+cind = 0
 outreach_df = outreach_df.fillna('')
 
 for filename in glob('../../src/pages/outreach/*.md'):
@@ -51,6 +62,12 @@ for filename in glob('../../src/pages/outreach/*.md'):
 					dcc_id = dcc_mapper[dcc]
 					dcc_outreach_df.loc[ind] = [uid, dcc_mapper[dcc]]
 					ind += 1
+			if val.get('center'):
+				for center in val["center"]:
+					center_id = center_mapper[center]
+					center_outreach_df.loc[cind] = [uid, center_mapper[center]]
+					cind += 1
+
 
 # webinars
 webinars = {}
@@ -79,14 +96,20 @@ for filename in glob('../../src/pages/webinars/*.md'):
 outreach_df['active'] = outreach_df['active'].fillna(0).astype(bool)
 outreach_df['featured'] = outreach_df['featured'].fillna(0).astype(bool)
 outreach_df['carousel'] = outreach_df['carousel'].fillna(0).astype(bool)
+outreach_df['recurring'] = outreach_df['recurring'].fillna(0).astype(bool)
 outreach_df['cfde_specific'] = outreach_df['cfde_specific'].fillna(0).astype(bool)
 backup_file(outreach_df, "outreach", quoting=False)
 backup_file(dcc_outreach_df, "dcc_outreach", False)
+backup_file(center_outreach_df, "center_outreach", False)
 
 cur = connection.cursor()
 
 cur.execute('''
   DELETE FROM dcc_outreach;
+''')
+
+cur.execute('''
+  DELETE FROM center_outreach;
 ''')
 
 cur.execute('''
@@ -146,6 +169,34 @@ cur.execute('''
     ;
   ''')
 cur.execute('drop table dcc_outreach_tmp;')
+
+# centers
+
+cur = connection.cursor()
+cur.execute('''
+  create table center_outreach_tmp
+  as table center_outreach
+  with no data;
+''')
+c_buf = io.StringIO()
+center_outreach_df.to_csv(c_buf, header=True, sep="\t", index=None)
+c_buf.seek(0)
+columns = next(c_buf).strip().split('\t')
+cur.copy_from(c_buf, 'center_outreach_tmp',
+	columns=center_outreach_columns,
+	null='',
+	sep='\t',
+)
+
+cur.execute('''
+    insert into center_outreach (outreach_id, center_id)
+      select outreach_id, center_id
+      from center_outreach_tmp
+      on conflict 
+        do nothing
+    ;
+  ''')
+cur.execute('drop table center_outreach_tmp;')
 connection.commit()
 
 print("Ingested outreach and webinars")

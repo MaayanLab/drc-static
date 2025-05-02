@@ -10,7 +10,9 @@ image: /img/genesetcart_webinar.png
 layout: '@/layouts/Outreach.astro'
 link: https://mountsinai.zoom.us/webinar/register/WN_ZXBJyN0SRuCj5LaYoGeXuw#/registration
 short_description: In this lecture, Giacomo Marino, a Bioinformatics Software Engineer in the Ma'ayan Lab at the Icahn School of Medicine at Mount Sinai, describes a new platform for assembling, augmenting, combining, visualizing, and analyzing gene sets. The platform utilizes LLMs to form hypotheses from datasets produced by NIH Common Fund programs.
-tags: '["workshop"]'
+tags: '["webinar"]'
+center:
+- DRC
 title: 'Omics Tools Webinar Series: GeneSetCart
 '
 ---

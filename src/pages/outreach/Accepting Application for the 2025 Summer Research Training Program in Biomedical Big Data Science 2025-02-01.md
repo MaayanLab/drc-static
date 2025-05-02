@@ -5,7 +5,6 @@ carousel: true
 cfde_specific: true
 dcc:
 - LINCS
-end_date: '2025-02-01T17:00:00-04:00'
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/Maayan_program.png
 layout: '@/layouts/Outreach.astro'
@@ -17,7 +16,7 @@ short_description: "The LINCS DCC Summer Research Training Program in Biomedical
   \ in the areas: data harmonization, machine learning, cloud computing, and dynamic\
   \ data visualization. <br/><br /> Application Deadline: February 1, 2025 <br />Program\
   \ Dates: June 2, 2025 \u2013 August 8, 2025 "
-start_date: '2024-10-01T12:00:00-05:00'
+application_start: '2024-10-01T12:00:00-05:00'
 tags: '["training program", "application deadline"]'
 title: Accepting Application for the 2025 Summer Research Training Program in Biomedical
   Big Data Science

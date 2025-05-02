@@ -16,7 +16,9 @@ short_description: The webinar featured ARCHS, a resource that provides access
   to gene and transcript counts uniformly processed from all the human and mouse RNA-seq
   experiments deposited by the community in the NCBI Gene Expression Omnibus (GEO).
 start_date: '2025-02-27T14:00:00-05:00'
-tags: '["workshop"]'
+tags: '["webinar"]'
+center:
+- DRC
 title: 'Omics Tools Webinar Series: ARCHS4'
 ---
 The webinar featured [ARCHS4](https://maayanlab.cloud/archs4/), a resource that provides access to gene and transcript counts uniformly processed from all the human and mouse RNA-seq experiments deposited by the community in the NCBI Gene Expression Omnibus (GEO). Watch recording [here](https://www.youtube.com/watch?v=BSz4XWFmfkg).
