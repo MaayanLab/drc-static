@@ -12,5 +12,7 @@ carousel_description: 'Join us on June 27, 2025 AT 1pm EST for an engaging webin
 start_date: '2025-06-27T13:00:00-04:00'
 tags: '["webinar"]'
 title: CFDE Webinar Series
+dcc:
+- HuBMAP
 ---
 Dr. Andreas Bueckle, a HuBMAP JumpStart Fellow, will present on Data Visualization in Immersive Technologies.
