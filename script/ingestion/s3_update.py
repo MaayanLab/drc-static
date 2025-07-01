@@ -36,9 +36,9 @@ def backup_file(df, suffix, include_index=True, quoting=True):
 	s_buf = io.StringIO()
 	# df.to_csv(s_buf, header=True, sep="\t")
 	# print(s_buf.read())
-	if include_index:
+	if include_index and quoting:
 		df.to_csv(s_buf, header=True, sep="\t")
-	elif not quoting:
+	elif not quoting and include_index:
 		df.to_csv(s_buf, header=True, sep="\t", quoting=csv.QUOTE_NONE)
 	else:
 		df.to_csv(s_buf, header=True, sep="\t",  index=None)

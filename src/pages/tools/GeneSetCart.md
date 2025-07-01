@@ -7,7 +7,8 @@ layout: '@/layouts/Tools.astro'
 short_description: GeneSetCart is interactive web-based application that enables users
   to fetch gene sets, augment, perform set operations, visualize, and analyze gene
   sets in a single session.
-tutorial: '[ "https://www.youtube.com/watch?v=yp0pfpJt1_M" ]'
+tutorial:
+  - https://www.youtube.com/watch?v=yp0pfpJt1_M
 url: https://genesetcart.cfde.cloud/
 doi: https://doi.org/10.1093/gigascience/giaf025
 ---

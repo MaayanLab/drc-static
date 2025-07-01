@@ -5,8 +5,9 @@ image: /img/pwb-screenshot.png
 label: Playbook Workflow Builder
 layout: '@/layouts/Tools.astro'
 short_description: Web-based platform to construct biomedical workflows
-tutorial: '[  "https://www.youtube.com/watch?v=xfnaNJL5-8c",  "https://www.youtube.com/watch?v=k_3wLDWDj8M"
-  ]'
+tutorial:
+  - https://www.youtube.com/watch?v=xfnaNJL5-8c
+  - https://www.youtube.com/watch?v=k_3wLDWDj8M
 url: https://playbook-workflow-builder.cloud/
 doi: https://doi.org/10.1371/journal.pcbi.1012901
 ---

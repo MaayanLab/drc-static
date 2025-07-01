@@ -7,6 +7,7 @@ from s3_update import backup_file
 from ingest_common import connection
 import io
 import csv
+import json
 publication_df = pd.read_csv('https://cfde-drc.s3.amazonaws.com/database/files/current_publications.tsv', sep="\t", index_col=0)
 publication_mapper = {}
 for i, row in publication_df.iterrows():
@@ -31,8 +32,11 @@ for filename in glob('../../src/pages/tools/*.md'):
 						doi = v.replace("https://doi.org/", "")
 						pub_id = publication_mapper[doi]
 						publication_df.at[pub_id, 'tool_id'] = uid
-				elif k not in ["layout", "id"]:
+				elif k not in ["layout", "id", "tutorial"]:
 					val[k] = v
+				elif k == "tutorial":
+					val[k] = json.dumps(v)
+					print(val[k], type(v))
 					
 			tools[uid] = val
 
