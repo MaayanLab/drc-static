@@ -48,7 +48,7 @@ for i,row in old_df[old_df.active == True].reset_index().set_index("id").iterrow
 				raise(Exception("key %s not the same, expected %s got %s"%(k, v, new_row[k])))
 
 ## Update S3
-# backup_file(df, "dcc")
+backup_file(df, "dccs")
 
 ## ingest
 
