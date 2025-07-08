@@ -54,6 +54,11 @@ cur.execute('''
 ''')
 
 cur.execute('''
+	DELETE FROM center_outreach;
+''')
+
+
+cur.execute('''
 	DELETE FROM centers;
 ''') 
 
