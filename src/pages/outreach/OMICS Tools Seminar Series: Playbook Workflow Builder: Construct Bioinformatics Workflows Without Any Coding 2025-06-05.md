@@ -12,7 +12,7 @@ image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/pwb-w-062025.png
 layout: '@/layouts/Outreach.astro'
 link: https://maayanlab.cloud/turl/1cca8b89
 short_description: Join us for an engaging seminar exploring the various features and the major upgrades to the Playbook Workflow Builder resource and how it can assist you with your own research projects.
-tags: '["workshop"]'
+tags: '["webinar"]'
 center:
 - DRC
 title: "Playbook Workflow Builder: Construct Bioinformatics Workflows Without Any Coding"
