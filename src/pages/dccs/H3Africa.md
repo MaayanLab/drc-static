@@ -1,5 +1,5 @@
 ---
-active: true
+active: false
 cf_site: https://commonfund.nih.gov/global-health
 cfde_partner: true
 homepage: https://h3africa.org/

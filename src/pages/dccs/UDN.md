@@ -1,5 +1,5 @@
 ---
-active: true
+active: false
 cf_site: https://commonfund.nih.gov/Diseases
 cfde_partner: true
 homepage: https://undiagnosed.hms.harvard.edu/
