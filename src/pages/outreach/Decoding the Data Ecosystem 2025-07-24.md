@@ -7,7 +7,7 @@ cfde_specific: true
 featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/decoding_data_ecosystem_2025.png
 layout: '@/layouts/Outreach.astro'
-link: https://www.zoomgov.com/webinar/register/WN_XsgCjWDfSyS6kQZPs77XQg#/registration
+link: https://orau.org/cfde-trainingcenter/connect/virtual-symposium.html
 short_description: The Decoding the Data Ecosystem Virtual Symposium invites faculty, students, and researchers to explore how the Common Fund Data Ecosystem (CFDE) can support research, education, and discovery in omics-related research.
 tags: '["symposium"]'
 center:
