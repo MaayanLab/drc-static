@@ -6,7 +6,7 @@ carousel_description: LEARN MORE ABOUT THE **CFDE WORKBENCH** BY READING THE PRE
 image: /img/workbench.png
 centers:
 - DRC
-doi: doi.org/10.1101/2025.02.04.636535
+doi: 10.1101/2025.02.04.636535
 featured: false
 journal: bioRxiv
 landmark: true
