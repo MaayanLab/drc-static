@@ -15,7 +15,7 @@ dccs:
 doi: 10.1101/2025.08.11.666099 
 featured: false
 journal: bioRxiv
-landmark: true
+landmark: false
 layout: '@/layouts/Publication.astro'
 title: 'The Data Distillery: A Graph Framework for Semantic Integration and Querying of Biomedical Data'
 year: 2025

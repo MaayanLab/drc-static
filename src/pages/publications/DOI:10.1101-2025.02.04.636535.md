@@ -7,7 +7,7 @@ image: /img/workbench.png
 centers:
 - DRC
 doi: 10.1101/2025.02.04.636535
-featured: false
+featured: true
 journal: bioRxiv
 landmark: true
 layout: '@/layouts/Publication.astro'
