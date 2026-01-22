@@ -2,14 +2,13 @@
 active: true
 carousel: false
 cfde_specific: false
-end_date: '2026-05-19T12:00:00-05:00'
+end_date: '2026-01-09T23:59-05:00'
 featured: false
-image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/BioITHackathon2026.png
+image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/BioITHackathon2026small.png
 layout: ../../layouts/Outreach.astro
 link: https://orausurvey.orau.org/n/BioITPitch.aspx
 short_description: The CFDE Training Center (TC) invites you to submit a pitch for a project in the seventh annual Bio-IT FAIR Data Hackathon
-start_date: '2026-05-18T12:00:00-05:00'
-application_end: '2026-01-09T12:23:59-04:00'
+application_end: '2026-01-09T-04:00'
 tags: '["hackathon"]'
 title: '7th Annual Bio-IT FAIR Data Hackathon: Call for Project Pitches'
 ---
