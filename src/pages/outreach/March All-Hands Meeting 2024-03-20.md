@@ -3,7 +3,7 @@ active: true
 carousel: false
 cfde_specific: true
 end_date: '2024-03-20T00:00:00-04:00'
-featured: false
+featured: true
 image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/Mar2024f2f.png
 layout: '@/layouts/Outreach.astro'
 link: /info/training_and_outreach/2024-march-all-hands-meeting
