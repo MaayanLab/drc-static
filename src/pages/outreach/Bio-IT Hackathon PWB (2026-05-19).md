@@ -5,7 +5,7 @@ cfde_specific: true
 start_date: '2026-05-19T09:00-04:00'
 end_date: '2026-05-19T12:00-04:00'
 featured: true
-image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/BioIT_PWB_2026.png
+image: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/BIT26-1080x1350-workshop1.jpg
 layout: ../../layouts/Outreach.astro
 link: https://www.bio-itworldexpo.com/workshops#1
 short_description: This hands-on workshop introduces the Playbook Workflow Builder (PWB), guiding participants through step-by-step recipes to create reusable, transparent, and interoperable bioinformatics workflows aligned with FAIR principles.
