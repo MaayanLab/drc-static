@@ -16,5 +16,8 @@ sources: GTEx; LINCS; IDG
 title: Tissue2Drugs
 tool_icon: /img/ubkg.png
 tool_name: Data Distillery Knowledge Graph
+tags:
+- tissue
+- small molecule
 ---
 Find all genes that are highly expressed in a GTEx tissue and may be perturbed by a specific compound based on data from the LINCS L1000 dataset, and are known drug targets based on data curated by IDG.

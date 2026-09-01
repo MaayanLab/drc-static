@@ -16,5 +16,8 @@ sources: LINCS; STRING; ChEA; GTEx; Enrichr; KEGG; GO; MSigDB; Metabolomics
 title: Related Proteins/Metabolites across DCCs
 tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
 tool_name: Playbook Workflow Builder
+tags:
+- protein
+- network
 ---
 Using directly related proteins to a gene of interest, we return a slew of related information to the gene protein network from different DCCs.

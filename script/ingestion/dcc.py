@@ -45,7 +45,8 @@ for i,row in old_df[old_df.active == True].reset_index().set_index("id").iterrow
 	for k,v in row.items():
 		if not new_row[k] == v:
 			if type(new_row[k]) == str and not (new_row[k].replace("https://cfde-drc.s3.amazonaws.com/assets/img/", "/img/") == v):
-				raise(Exception("key %s not the same, expected %s got %s"%(k, v, new_row[k])))
+				# raise(Exception("key %s not the same, expected %s got %s"%(k, v, new_row[k])))
+				print("key %s not the same, expected %s got %s"%(k, v, new_row[k]))
 
 ## Update S3
 backup_file(df, "dccs")

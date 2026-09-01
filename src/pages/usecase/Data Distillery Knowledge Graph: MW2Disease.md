@@ -15,5 +15,10 @@ sources: IDG; GTEx
 title: MW2Disease
 tool_icon: /img/ubkg.png
 tool_name: Data Distillery Knowledge Graph
+tags:
+- disease
+- metabolite
+- small molecule
+- tissue
 ---
 For a specific disease in Metabolomics Workbench, find all IDG and GTEx assertions that may be related to the disease in a specific tissue type.

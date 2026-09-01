@@ -13,5 +13,9 @@ source_dcc:
 title: Liquid Biopsy of Condition
 tool_icon: /img/ubkg.png
 tool_name: Data Distillery Knowledge Graph
+tags:
+- exRNA
+- gene
+- disease
 ---
 For a given set of genes that are highly expressed in a specific disease, identify extracellular RNAs (exRNAs) that may be detected in human biofluids and thus serve as non-invasive disease biomarkers.

@@ -15,5 +15,8 @@ sources: ClinGen; STRING
 title: Guilt by Association
 tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
 tool_name: Playbook Workflow Builder
+tags:
+- gene set
+- pathways
 ---
 Given a set of genes, connect the dots (CTD) is performed against protein & pathway graphs to obtain a small subset of highly connected genes and those that are guilty by association.

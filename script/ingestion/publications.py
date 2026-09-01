@@ -26,6 +26,7 @@ partnership_mapper = {}
 for k,v in partnerships.iterrows():
 	partnership_mapper[v["title"]] = k
 
+print(partnership_mapper)
 r03 = pd.read_csv('https://cfde-drc.s3.amazonaws.com/database/files/current_r03s.tsv', sep="\t", index_col=0)
 r03_mapper = {}
 for k,v in r03.iterrows():

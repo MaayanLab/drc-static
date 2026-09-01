@@ -14,5 +14,8 @@ sources: BioThings; Kids First; GTEx
 title: Variant Expression in Tumor/Healthy
 tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
 tool_name: Playbook Workflow Builder
+tags:
+- variant
+- tissue
 ---
 We construct a joint plot showing how the variant's closest gene is expressed in tumors from KidsFirst and healthy human tissue from GTEx.

@@ -17,5 +17,9 @@ title: Small Molecules to Induce a Biological Process
 tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
 tool_name: Playbook Workflow Builder
 tutorial: https://www.youtube.com/watch?v=EXdzdZR3C0I
+tags:
+- gene
+- pathway
+- small molecule
 ---
 We identify genes associated with a biological process from human, mouse phenotypes, KEGG pathways and GO gene set libraries. We then find Consensus LINCS compounds which upregulate these genes resulting in a ranked listing of drug candidates for inducing the biological process.

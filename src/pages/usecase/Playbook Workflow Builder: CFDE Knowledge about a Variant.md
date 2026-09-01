@@ -14,5 +14,7 @@ sources: BioThings; LINCS; GTEx
 title: CFDE Knowledge about a Variant
 tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
 tool_name: Playbook Workflow Builder
+tags:
+- variant
 ---
 We query several CFDE data sources for information about the variant provided and about the closest gene to that variant.

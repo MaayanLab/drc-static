@@ -2,7 +2,7 @@
 active: true
 cf_site: https://commonfund.nih.gov/HMP
 cfde_partner: true
-homepage: https://portal.hmpdacc.org/
+homepage: https://www.hmpdacc.org/hmp/resources/ 
 icon: https://cfde-drc.s3.amazonaws.com/assets/img/HMP.png
 label: The Human Microbiome Project
 layout: '@/layouts/DCC.astro'

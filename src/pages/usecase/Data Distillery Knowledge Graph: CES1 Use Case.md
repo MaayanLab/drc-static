@@ -14,5 +14,8 @@ sources: LINCS; GTEx
 title: CES1 Use Case
 tool_icon: /img/ubkg.png
 tool_name: Data Distillery Knowledge Graph
+tags:
+- gene
+- small molecule
 ---
 Display drugs that up or down regulate the gene CES1 from LINCS as well as tissues where it is highly expressed based on assertions from GTEx.

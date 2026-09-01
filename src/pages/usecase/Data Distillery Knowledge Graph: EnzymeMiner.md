@@ -15,5 +15,8 @@ sources: LINCS; GTEx
 title: EnzymeMiner
 tool_icon: /img/ubkg.png
 tool_name: Data Distillery Knowledge Graph
+tags:
+- protein
+- small molecule
 ---
 Select a drug processing enzyme to view drugs that up or down regulate it from LINCS as well as tissues where it is highly expressed based on data from GTEx.

@@ -10,5 +10,7 @@ tutorial:
   - https://www.youtube.com/watch?v=Gt3CCsvTppc
   - https://www.youtube.com/watch?v=nqzDOsDFJ7g
 url: https://maayanlab.cloud/reprotox-kg
+tags:
+- knowledge graph
 ---
 To further characterize associations between small molecule compounds and their potential to induce specific birth abnormalities, we gathered knowledge from multiple sources to construct a reproductive toxicity Knowledge Graph (ReproTox-KG) with a focus on associations between birth defects, drugs, and genes.

@@ -16,5 +16,8 @@ sources: IDG; GTEx
 title: Mild Cognitive Impairment Use Case
 tool_icon: /img/ubkg.png
 tool_name: Data Distillery Knowledge Graph
+tags:
+- disease
+- tissue
 ---
 Find all IDG and GTEx assertions that may be related to mild cognitive impairment and any tissue type.

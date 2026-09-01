@@ -16,5 +16,8 @@ sources: ARCHS4; ChEA; ENCODE; GTEx
 title: Identify the Tissue Activity for a TF based on its Targets
 tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
 tool_name: Playbook Workflow Builder
+tags:
+- transcription factor
+- tissue
 ---
 Given a Transcription Factor, we collect its targets by various resources and then Enrich the set of consensus targets against GTEx Tissue expression. The result is ranked tissues potentially regulated by the transcription factor.

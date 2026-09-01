@@ -36,7 +36,8 @@ for filename in glob('../../src/pages/usecase/*.md'):
 			"image": row.get("image"),
 			"tutorial": row.get("tutorial"),
 			"featured": row.get("featured"),
-			"creator_dcc_id": dcc_mapper[row["creator_dcc"][0]],
+			"tags": json.dumps(row.get('tags'))
+			# "creator_dcc_id": dcc_mapper.get(row["creator_dcc"][0], ""),
 		}
 		if row.get("source_dcc"): 
 			for dcc in set([dcc_mapper[i] for i in row["source_dcc"]]):
@@ -118,4 +119,5 @@ cur.execute('''
   '''%(column_string, column_string))
 cur.execute('drop table dcc_usecase_tmp;')
 connection.commit()
+print("Ingested")
 

@@ -17,5 +17,9 @@ sources: MoTrPAC; GTEx; Enrichr; GO; WikiPathway
 title: 'CFDE GMT Crossing: GTEx Aging Signatures vs MoTrPAC Exercise Gene Sets (Blood)'
 tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/g2sg-logo.png
 tool_name: GeneSetCart
+tags:
+- gene set
+- aging
+- exercise
 ---
 The goal of the Molecular Transducers of Physical Activity Consortium (MoTrPAC) is to assess molecular changes that occur in response to physical activity [1]. To investigate the common biological underpinnings of aging and exercise and discover genes that are induced and repressed due to exercise and also change in levels due to aging, we crossed the aging signatures created from GTEx [2] with the MoTrPAC rat endurance training [3] gene sets.

@@ -11,8 +11,11 @@ source_dcc:
 - GTEx
 - IDG
 - LINCS
-title: Breast Epitheliumn Use Case
+title: Breast Epithelium Use Case
 tool_icon: /img/ubkg.png
 tool_name: Data Distillery Knowledge Graph
+tags:
+- gene
+- tissue
 ---
 Find the genes that are highly expressed in breast epithelium as well as drugs that target these genes.

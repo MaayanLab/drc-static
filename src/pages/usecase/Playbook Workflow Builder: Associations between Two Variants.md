@@ -14,5 +14,8 @@ sources: BioThings; GTEx
 title: Associations between Two Variants
 tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
 tool_name: Playbook Workflow Builder
+tags:
+- variant
+- gene
 ---
 Given two variants, we find their closest genes and present combined knowledge about them including their expression in tumors & healthy tissue, interactions between the two proteins, and gene sets containing the two genes.

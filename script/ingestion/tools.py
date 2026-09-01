@@ -32,9 +32,12 @@ for filename in glob('../../src/pages/tools/*.md'):
 						doi = v.replace("https://doi.org/", "")
 						pub_id = publication_mapper[doi]
 						publication_df.at[pub_id, 'tool_id'] = uid
-				elif k not in ["layout", "id", "tutorial"]:
+				elif k not in ["layout", "id", "tutorial", "tags"]:
 					val[k] = v
 				elif k == "tutorial":
+					val[k] = json.dumps(v)
+					print(val[k], type(v))
+				elif k == "tags":
 					val[k] = json.dumps(v)
 					print(val[k], type(v))
 					

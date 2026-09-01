@@ -14,5 +14,7 @@ sources: BioThings; LINCS; GTEx
 title: CFDE Knowledge about a Gene
 tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
 tool_name: Playbook Workflow Builder
+tags:
+- gene
 ---
 We query several CFDE data sources for information about the gene provided.
