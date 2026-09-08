@@ -17,5 +17,6 @@ tool_name: Playbook Workflow Builder
 tags:
 - variant
 - tissue
+- cancer
 ---
 We construct a joint plot showing how the variant's closest gene is expressed in tumors from KidsFirst and healthy human tissue from GTEx.

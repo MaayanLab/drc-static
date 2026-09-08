@@ -9,7 +9,7 @@ title: Common kinase pathways/complexes
 tool_icon: https://cfde-drc.s3.amazonaws.com/assets/img/pkn.webp
 tool_name: ProKN
 tags:
-- kinase
+- phosphorylation
 - tissue
 ---
 We construct a joint plot showing how the variant's closest gene is expressed in tumors from KidsFirst and healthy human tissue from GTEx.

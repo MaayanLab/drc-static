@@ -17,7 +17,7 @@ title: Predict Small Molecules that are Likely to Induce Specific Birth Defects
 tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.png
 tool_name: Playbook Workflow Builder
 tags:
-- birth defect
+- phenotype
 - gene set
 - small molecule
 ---

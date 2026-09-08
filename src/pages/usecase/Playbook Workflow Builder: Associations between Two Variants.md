@@ -17,5 +17,6 @@ tool_name: Playbook Workflow Builder
 tags:
 - variant
 - gene
+- cancer
 ---
 Given two variants, we find their closest genes and present combined knowledge about them including their expression in tumors & healthy tissue, interactions between the two proteins, and gene sets containing the two genes.

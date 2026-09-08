@@ -26,7 +26,7 @@ tool_icon: https://cfde-drc.s3.us-east-2.amazonaws.com/assets/img/PWB-logo-2024.
 tool_name: Playbook Workflow Builder
 tutorial: https://www.youtube.com/watch?v=LV2354qryXk&list=PLfq4yYrYksVhoPn7xrPQrVYApU-rVLBv1&index=4
 tags:
-- targets
+- gene
 - cancer
 ---
 Given RNA-seq samples from a patient tumor, we screen for targets which are highly expressed in the tumor but lowly expressed across all healthy human tissues in GTEx. Detailed information about the selected target are queried from several DCCs.

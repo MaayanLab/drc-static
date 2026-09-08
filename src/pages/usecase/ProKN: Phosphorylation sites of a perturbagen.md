@@ -13,6 +13,6 @@ tool_icon: https://cfde-drc.s3.amazonaws.com/assets/img/pkn.webp
 tool_name: ProKN
 tags:
 - phosphorylation
-- perturbagen
+- small molecule
 ---
 We construct a joint plot showing how the variant's closest gene is expressed in tumors from KidsFirst and healthy human tissue from GTEx.

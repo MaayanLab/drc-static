@@ -15,6 +15,6 @@ tool_icon: /img/ubkg.png
 tool_name: Data Distillery Knowledge Graph
 tags:
 - exRNA
-- biomarker
+- gene
 ---
 For genes that are correlated with frontotemporal dementia, identify extracellular RNAs (exRNAs) that may be detected in human biofluids and thus serve as non-invasive disease biomarkers.
